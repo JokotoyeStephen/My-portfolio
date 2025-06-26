@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stephens Portfolio</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script> -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css" />
     <link rel="shortcut icon" href="./images/AAA.png" type="image/x-icon">
@@ -15,20 +15,60 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body id="bodys">
-    <section class="flex justify-between shadow ">
+    <!-- <section class="flex justify-between shadow fixed w-full">
             <img src="./images/AAA.png" alt="" width="70px" class="ms-6" style="border-radius: 70px;">
             <ul class="flex gap-10 text-xl pt-6 pe-10" class="navitem">
                 <li><a href="">Home</a></li>
-                <li><a href="">Our Services</a></li>
-                <li><a href="">About Us</a></li>
+                <li><a href="#service">Our Services</a></li>
+                <li><a href="#about">About Us</a></li>
                 <li><a href="">Testimonial</a></li>
                 <li><a href="" class="btn" id="btn">Contact Us</a></li>
             </ul>
-    </section>
+    </section> -->
+
+
+<section class="flex justify-between items-center shadow fixed w-full bg-white z-50">
+    <img src="./images/AAA.png" alt="Logo" class="w-16 h-16 ml-4 sm:ml-6 rounded-full">
+    <nav class="hidden md:flex gap-8 text-lg pt-4 pr-6">
+        <a href="" class="hover:text-blue-600">Home</a>
+        <a href="#service" class="">Our Services</a>
+        <a href="#about" class="hover:text-blue-600">About Us</a>
+        <a href="" class="hover:text-blue-600">Testimonial</a>
+        <a href="" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Contact Us</a>
+    </nav>
+    <button class="md:hidden mr-4 focus:outline-none" id="menu-toggle" aria-label="Toggle menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+    </button>
+    <div class="hidden absolute top-16 left-0 w-full bg-white shadow-md md:hidden" id="mobile-menu">
+        <nav class="flex flex-col items-center gap-4 py-4 text-lg">
+            <a href="" class="hover:text-blue-600">Home</a>
+            <a href="#service" class="hover:text-blue-600">Our Services</a>
+            <a href="#about" class="hover:text-blue-600">About Us</a>
+            <a href="" class="hover:text-blue-600">Testimonial</a>
+            <a href="" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Contact Us</a>
+        </nav>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <img src="./images/img.png" alt="" width="20px" height="20px" id="light" onclick="darkMood()">
     
 
-    <section class="flex gap-30" class="hero">
+    <section class="flex gap-30 pt-24" class="hero">
         <div class="ps-24 pt-20">
             <p class="welcome">WELCOME TO MY WORLD</p>
             <h1 class="text-5xl">HI, I'm <SPan style="color: #ff9602;font-weight: 500;">Stephen Jokotoye</SPan> a <span id="typed"> Full stack developer</span></h1>
@@ -71,7 +111,7 @@
                 </ul>
             </div>
             <div class="card">
-                <h3>Computer Networks </h3>
+                <h3> Computer Networks </h3>
                 <ul style="list-style: circle;">
                     <li>Network Architecture</li>
                     <li>Wireless Communication</li>
@@ -79,32 +119,65 @@
                 </ul>
             </div>
             <div class="card">
-                <h3>Human-Computer Interaction (HCL)</h3>
+                <h3> Artificial Intelligence (AI)</h3>
                 <ul style="list-style: circle;">
-                    <li>User Experience (UX) design</li>
-                    <li>Backend Development (Node.js, Python, Ruby, PHP)</li>
-                    <li>Responsive Design.</li>
+                    <li> Making machines simulate human intelligence</li>
+                    <li>Machine learning, deep learning, natural language processing</li>
+                    <li>Applications: Chatbots, self-driving cars, facial recognition.</li>
                 </ul>
             </div>
             <div class="card">
-                <h3>Web Development </h3>
+                <h3> Cybersecurity </h3>
                 <ul style="list-style: circle;">
-                    <li>Frontend Development (HTML, CSS, Javascript)</li>
-                    <li>Backend Development (Node.js, Python, Ruby, PHP)</li>
-                    <li>Responsive Design.</li>
+                    <li>Focus: Protecting systems, networks, and data from attacks</li>
+                    <li>Cryptography, ethical hacking, penetration testing</li>
+                    <li>Security analyst, network security engineer.</li>
                 </ul>
             </div>
             <div class="card">
-                <h3>Web Development </h3>
+                <h3> Mobile App Development </h3>
                 <ul style="list-style: circle;">
-                    <li>Frontend Development (HTML, CSS, Javascript)</li>
-                    <li>Backend Development (Node.js, Python, Ruby, PHP)</li>
-                    <li>Responsive Design.</li>
+                    <li>Platforms: Android (Java/Kotlin), iOS (Swift)</li>
+                    <li>Focus: Building apps for mobile devices</li>
+                    <li>Tools: React Native, Flutter.</li>
                 </ul>
             </div>
         </div>
     </section>
-    <section class="mt-20">
+   
+
+    <section class="mt-20 pe-24 ps-24" id="about">
+        <div class="flex">
+            <div>
+                <img src="./images/ef13771bd3956c84ed21a57c10cf05ee-removebg-preview (2).png" alt="">
+            </div>
+            <div class="about">
+                <p class="text-xl text-center"><span style="color: #ff9602;">--- </span>About Me</p>
+                <h2 class="text-5xl text-center">Who is <span style="color: #ff9602;">Jokotoye Stephen</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi aut iusto assumenda aliquam consequatur nemo, recusandae cupiditate nihil debitis porro!</p>
+                <div class="flex pt-6 justify-between">
+                    <div>
+                        <h3 style="color: #ff9602;" class="text-5xl">40+</h3>
+                        <p>Project Completed</p>
+                    </div>
+                    <div>
+                        <h3 style="color: #ff9602;" class="text-5xl">50+</h3>
+                        <p>Industry Covered</p>
+                    </div>
+                    <div>
+                        <h3 style="color: #ff9602;" class="text-5xl">2+</h3>
+                        <p>Years of Experience</p>
+                    </div>
+                </div>
+                <div class="nop flex">
+                    <button class="btn1"><a href="">Download Cv</a></button>
+                    <p class="ikon text">(---- )</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <section class="mt-20">
         <p class="text-xl text-center">--- Education & Work </p>
         <h2 class="text-5xl text-center mt-2">My <span style="color: #ff9602;">Academic</span>  <br> and <span style="color: #ff9602;">Proffestional</span> Jounery</h2>
         <div class="flex ps-24 gap-10 pe-24 mt-4 pt-6 " id="cardo">
@@ -161,34 +234,54 @@
         </div>
     </section>
 
-    <section class="mt-20 pe-24 ps-24">
-        <div class="flex">
-            <div>
-                <img src="./images/ef13771bd3956c84ed21a57c10cf05ee-removebg-preview (2).png" alt="">
+    <section class="ps-24 pt-20 ">
+        <p class="text-xl text-center">Contact <span style="color: #ff9602;">Us</span></p>
+        <h2 class="text-4xl mb-6 text-center">Let talk for <span style="color: #ff9602;">Your next Project</span></h2>
+        <p class="text-xl text-center">Have a project in mind or just want to say hi?</p>
+        <p class="text-xl text-center">I’m always open to discussing web development work, collaborations, or just chatting about tech and design.</p>
+        <div class="flex gap-48 pt-6">
+
+
+        <div>
+            <div class="flex gap-6 rand1">
+                <i class="bx bxs-phone"></i>
+                <p class="text-xl">+234 (081) 8144108854</p></div>
+            <div class="flex gap-6 rand1">
+                <i class="bx bxl-gmail"></i>
+                <p class="text-xl">jokotoyestephen2023@gmail.com</p>
             </div>
-            <div class="about">
-                <p class="text-xl text-center"><span style="color: #ff9602;">--- </span>About Me</p>
-                <h2 class="text-5xl text-center">Who is <span style="color: #ff9602;">Jokotoye Stephen</span></h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi aut iusto assumenda aliquam consequatur nemo, recusandae cupiditate nihil debitis porro!</p>
-                <div class="flex pt-6 justify-between">
-                    <div>
-                        <h3 style="color: #ff9602;" class="text-5xl">40+</h3>
-                        <p>Project Completed</p>
-                    </div>
-                    <div>
-                        <h3 style="color: #ff9602;" class="text-5xl">50+</h3>
-                        <p>Industry Covered</p>
-                    </div>
-                    <div>
-                        <h3 style="color: #ff9602;" class="text-5xl">2+</h3>
-                        <p>Years of Experience</p>
-                    </div>
-                </div>
-                <div class="nop flex">
-                    <button class="btn1"><a href="">Download Cv</a></button>
-                    <p class="ikon text">(---- )</p>
-                </div>
+            <div class="flex gap-6 rand1">
+                <i class="bx bx-current-location"></i>
+                <p class="text-xl">Ogbomos, Oyo State.</p>
             </div>
+        </div>
+
+            <form action="" method="post" class="input">
+                <label for="">Name</label><br> <input type="text" placeholder="Full Name"><br>
+                <label for="">E-mail </label><br><input type="email" placeholder="enter your Emai"><br>
+                <label for="">Phone Number</label><br><input type="number" name="" id="" placeholder="Phone number"><br>
+                <label for="">I'm Interested In</label><br>
+                    <select name="" id="">
+                        <option value="Full-stack">Full-stack Website</option>
+                        <option value="Wordpress">Wordpress Development</option>
+                        <option value="Landing">Landing Page</option>
+                        <option value="websites">Website Design</option>
+                        <option value="E-commerce">E-commerce Website</option>
+                        <option value="Maintenance">Maintenance & Support</option>
+                    </select><br>
+                     <label for="">Country</label><br>
+                    <select name="Country" id="">
+                        <option value="America">United State of America</option>
+                        <option value="Kingdom">United Kingdom</option>
+                        <option value="Mexico">Mexico</option>
+                        <option value="Others">Others</option>
+                    </select>
+                    <br>
+
+                    <label for="">message me</label>
+                    <br>
+                    <textarea name="message" id="message" placeholder="message me"></textarea>
+            </form>
         </div>
     </section>
     <script src="./sript.js"></script>
