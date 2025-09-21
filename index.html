@@ -1,84 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stephens Portfolio</title>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <!-- <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script> -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css" />
     <link rel="shortcut icon" href="./images/AAA.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body id="bodys">
-    <!-- <section class="flex justify-between shadow fixed w-full">
-            <img src="./images/AAA.png" alt="" width="70px" class="ms-6" style="border-radius: 70px;">
-            <ul class="flex gap-10 text-xl pt-6 pe-10" class="navitem">
-                <li><a href="">Home</a></li>
-                <li><a href="#service">Our Services</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="">Testimonial</a></li>
-                <li><a href="" class="btn" id="btn">Contact Us</a></li>
-            </ul>
-    </section> -->
 
-
-<section class="flex justify-between items-center shadow fixed w-full bg-white z-50">
-    <img src="./images/AAA.png" alt="Logo" class="w-16 h-16 ml-4 sm:ml-6 rounded-full">
-    <nav class="hidden md:flex gap-8 text-lg pt-4 pr-6">
-        <a href="" class="hover:text-blue-600">Home</a>
-        <a href="#service" class="">Our Services</a>
-        <a href="#about" class="hover:text-blue-600">About Us</a>
-        <a href="" class="hover:text-blue-600">Testimonial</a>
-        <a href="" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Contact Us</a>
-    </nav>
-    <button class="md:hidden mr-4 focus:outline-none" id="menu-toggle" aria-label="Toggle menu">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
-    </button>
-    <div class="hidden absolute top-16 left-0 w-full bg-white shadow-md md:hidden" id="mobile-menu">
-        <nav class="flex flex-col items-center gap-4 py-4 text-lg">
-            <a href="" class="hover:text-blue-600">Home</a>
-            <a href="#service" class="hover:text-blue-600">Our Services</a>
-            <a href="#about" class="hover:text-blue-600">About Us</a>
-            <a href="" class="hover:text-blue-600">Testimonial</a>
-            <a href="" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Contact Us</a>
+    <section class="flex justify-between items-center shadow fixed w-full">
+        <img src="./images/AAA.png" alt="" width="70px" class="ms-6" style="border-radius: 70px;">
+        <nav class="hidden md:flex gap-8 text-lg pt-4 pr-6">
+            <a href="#">Home</a>
+            <a href="#service">Our Services</a>
+            <a href="#about">About Us</a>
+            <a href="">Testimonial</a>
+            <a href="" class="btn mb-" id="btn">Contact Us</a>
         </nav>
-    </div>
-</section>
+        <button class="md:hidden mr-4 focus:outline-none" id="menu-toggle" aria-label="Toggle menu">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </button>
+        <div class="hidden absolute top-16 left-0 w-full shadow-md md:hidden" id="mobile-menu">
+            <nav class="flex flex-col items-center gap-4 py-4 text-lg">
+                <a href="#">Home</a>
+                <a href="#service">Our Services</a>
+                <a href="#about">About Us</a>
+                <a href="">Testimonial</a>
+                <a href="" class="btn" id="btn">Contact Us</a>
 
-
-
-
-
-
-
-
-
-
-
+            </nav>
+        </div>
+    </section>
 
 
 
     <img src="./images/img.png" alt="" width="20px" height="20px" id="light" onclick="darkMood()">
-    
+
 
     <section class="flex gap-30 pt-24" class="hero">
         <div class="ps-24 pt-20">
             <p class="welcome">WELCOME TO MY WORLD</p>
-            <h1 class="text-5xl">HI, I'm <SPan style="color: #ff9602;font-weight: 500;">Stephen Jokotoye</SPan> a <span id="typed"> Full stack developer</span></h1>
-            <p>I’m a Full-stack web developer focused on building responsive, user-centric websites. With tools like Tailwind CSS and React, Node.js and laravel. I craft clean, modern interfaces. I value performance, accessibility, and seamless user experience. Explore my works on how i create robust,  user-friendly application with clean, efficient, and scalable code.</p>
+            <h1 class="text-5xl">HI, I'm <SPan style="color: #ff9602;font-weight: 500;">Stephen Jokotoye</SPan> a <span
+                    id="typed"> Full stack developer</span></h1>
+            <p class="pt-4">I’m a Full-stack web developer focused on building responsive, user-centric websites. With tools like
+                Tailwind CSS and React, Node.js and laravel. I craft clean, modern interfaces. I value performance,
+                accessibility, and seamless user experience. Explore my works on how i create robust, user-friendly
+                application with clean, efficient, and scalable code.</p>
             <div class="flex justify-between">
                 <div class="icon_1">
                     <h3 class="mt-10 mb-2">Find Me on</h3>
-                   <a href=""> <i class='bx bxl-github'></i></a>
-                   <a href=""> <i class='bx bxl-linkedin-square'></i></a>
-                   <a href=""><i class='bx bxl-whatsapp-square'></i> </a>
+                    <a href=""> <i class='bx bxl-github'></i></a>
+                    <a href=""> <i class='bx bxl-linkedin-square'></i></a>
+                    <a href=""><i class='bx bxl-whatsapp-square'></i> </a>
                 </div>
                 <div class="icon_1">
                     <h3 class="mt-10 mb-2">Best Skills</h3>
@@ -88,9 +74,10 @@
                 </div>
             </div>
         </div>
-        <div class="pe-10"><img src="./images/ef13771bd3956c84ed21a57c10cf05ee-removebg-preview (2).png" alt="" width="1700px"></div>
+        <div class="pe-10"><img src="./images/ef13771bd3956c84ed21a57c10cf05ee-removebg-preview (2).png" alt=""
+                width="1700px"></div>
     </section>
-    <section class="mt-20 ps-24 pe-24">
+    <section class="mt-24 ps-24 pe-24" id="service">
         <p class="features  text-xl ">FEATURES</p>
         <h2 class="text-5xl">WHAT I DO</h2>
         <div class="card_section mt-4">
@@ -144,28 +131,28 @@
             </div>
         </div>
     </section>
-   
 
-    <section class="mt-20 pe-24 ps-24" id="about">
-        <div class="flex">
+
+    <section class="mt-32 pe-24 ps-24" id="about">
+        <div class="flex gap-20">
             <div>
-                <img src="./images/ef13771bd3956c84ed21a57c10cf05ee-removebg-preview (2).png" alt="">
+                <img src="./images/ef13771bd3956c84ed21a57c10cf05ee-removebg-preview (2).png" alt="" width="1000px">
             </div>
             <div class="about">
                 <p class="text-xl text-center"><span style="color: #ff9602;">--- </span>About Me</p>
                 <h2 class="text-5xl text-center">Who is <span style="color: #ff9602;">Jokotoye Stephen</span></h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi aut iusto assumenda aliquam consequatur nemo, recusandae cupiditate nihil debitis porro!</p>
+                <p class="pt-4"> I am a passionate web developer specializing in creating responsive, user-friendly websites and applications. Skilled in frontend and backend development, I love solving problems and turning ideas into reality using modern technologies like HTML, CSS, JavaScript, Tailwind, Node.js, and MongoDB.</p>
                 <div class="flex pt-6 justify-between">
                     <div>
-                        <h3 style="color: #ff9602;" class="text-5xl">40+</h3>
+                        <h3 style="color: #ff9602; font-family: 'Fredoka', sans-serif;" class="text-5xl">10+</h3>
                         <p>Project Completed</p>
                     </div>
                     <div>
-                        <h3 style="color: #ff9602;" class="text-5xl">50+</h3>
+                        <h3 style="color: #ff9602;font-family: 'Fredoka', sans-serif;" class="text-5xl">20+</h3>
                         <p>Industry Covered</p>
                     </div>
                     <div>
-                        <h3 style="color: #ff9602;" class="text-5xl">2+</h3>
+                        <h3 style="color: #ff9602; font-family: 'Fredoka', sans-serif;" class="text-5xl">2+</h3>
                         <p>Years of Experience</p>
                     </div>
                 </div>
@@ -177,18 +164,14 @@
         </div>
     </section>
 
-     <section class="mt-20">
-        <p class="text-xl text-center">--- Education & Work </p>
-        <h2 class="text-5xl text-center mt-2">My <span style="color: #ff9602;">Academic</span>  <br> and <span style="color: #ff9602;">Proffestional</span> Jounery</h2>
+    <section class="mt-24">
+        <p class="text-xl text-center">--- Projects & Work </p>
+        <h2 class="text-5xl text-center mt-2">Individual <span style="color: #ff9602;">Projects</span> <br> and collaborations <span style="color: #ff9602;">Projects</span></h2>
         <div class="flex ps-24 gap-10 pe-24 mt-4 pt-6 " id="cardo">
             <div class="card pe-10">
-                <div class="flex">
-                    <div class="text-5xl"><i class='bx bxs-graduation'></i></div>
-                    <h3>Education</h3>
-                </div>
+                <img src="" alt="">
                 <div class="lists">
-                    <p class="para">2021 - 2026</p>
-                    <h4 >Ladoke Akintola University of Technology</h4>
+                    <h2>Hotel Management & Booking System</h2>
                     <p class="para">B.Tech</p>
                 </div>
                 <div class="lists">
@@ -198,13 +181,9 @@
                 </div>
             </div>
             <div class="card">
-                <div class="flex">
-                    <div class="text-5xl"><i class='bx bxs-graduation'></i></div>
-                    <h3>Education</h3>
-                </div>
+                <img src="" alt="">
                 <div class="lists">
-                    <p class="para">2021 - 2026</p>
-                    <h4 >Ladoke Akintola University of Technology</h4>
+                    <h2>Mutil-Language Translator</h2>
                     <p class="para">B.Tech</p>
                 </div>
                 <div class="lists">
@@ -213,14 +192,10 @@
                     <p class="para">Software Engineering</p>
                 </div>
             </div>
-               <div class="card">
-                <div class="flex">
-                    <div class="text-5xl"><i class='bx bxs-graduation'></i></div>
-                    <h3>Education</h3>
-                </div>
+            <div class="card">
+                <img src="" alt="">
                 <div class="lists">
-                    <p class="para">2021 - 2026</p>
-                    <h4 >Ladoke Akintola University of Technology</h4>
+                    <h4>Ladoke Akintola University of Technology</h4>
                     <p class="para">B.Tech</p>
                 </div>
                 <div class="lists">
@@ -234,58 +209,181 @@
         </div>
     </section>
 
-    <section class="ps-24 pt-20 ">
-        <p class="text-xl text-center">Contact <span style="color: #ff9602;">Us</span></p>
+    <section class="ps-24 pt-32 ">
+        <p class="text-xl text-center">Contact <span style="color: #ff9602;">Me</span></p>
         <h2 class="text-4xl mb-6 text-center">Let talk for <span style="color: #ff9602;">Your next Project</span></h2>
         <p class="text-xl text-center">Have a project in mind or just want to say hi?</p>
-        <p class="text-xl text-center">I’m always open to discussing web development work, collaborations, or just chatting about tech and design.</p>
-        <div class="flex gap-48 pt-6">
+        <p class="text-xl text-center">I’m always open to discussing web development work, collaborations, or just
+            chatting about tech and design.</p>
+      <div class="flex flex-col md:flex-row gap-8 pt-16">
+  
+  <!-- Contact Info -->
+  <div class="w-full md:w-1/3 space-y-6">
+    <div class="flex gap-6 rand1">
+      <i class="bx bxs-phone"></i>
+      <p class="text-xl">+234 (081) 8144108854</p>
+    </div>
+    <div class="flex gap-6 rand1">
+      <i class="bx bxl-gmail"></i>
+      <p class="text-xl">jokotoyestephen2023@gmail.com</p>
+    </div>
+    <div class="flex gap-6 rand1">
+      <i class="bx bx-current-location"></i>
+      <p class="text-xl">Ogbomos, Oyo State.</p>
+    </div>
+ 
 
+  <div>
+    <h2 class="pt-6 text-2xl">Some of my Social Media handles</h2>
+    <p></p>
+  </div>
 
-        <div>
-            <div class="flex gap-6 rand1">
-                <i class="bx bxs-phone"></i>
-                <p class="text-xl">+234 (081) 8144108854</p></div>
-            <div class="flex gap-6 rand1">
-                <i class="bx bxl-gmail"></i>
-                <p class="text-xl">jokotoyestephen2023@gmail.com</p>
-            </div>
-            <div class="flex gap-6 rand1">
-                <i class="bx bx-current-location"></i>
-                <p class="text-xl">Ogbomos, Oyo State.</p>
-            </div>
-        </div>
+ </div>
+  <!-- Contact Form -->
+  <form action="/submit" method="POST" class="w-full md:w-2/3 pe-24">
+    <h2 class="text-2xl font-semibold mb-2">Get In Touch</h2>
 
-            <form action="" method="post" class="input">
-                <label for="">Name</label><br> <input type="text" placeholder="Full Name"><br>
-                <label for="">E-mail </label><br><input type="email" placeholder="enter your Emai"><br>
-                <label for="">Phone Number</label><br><input type="number" name="" id="" placeholder="Phone number"><br>
-                <label for="">I'm Interested In</label><br>
-                    <select name="" id="">
-                        <option value="Full-stack">Full-stack Website</option>
-                        <option value="Wordpress">Wordpress Development</option>
-                        <option value="Landing">Landing Page</option>
-                        <option value="websites">Website Design</option>
-                        <option value="E-commerce">E-commerce Website</option>
-                        <option value="Maintenance">Maintenance & Support</option>
-                    </select><br>
-                     <label for="">Country</label><br>
-                    <select name="Country" id="">
-                        <option value="America">United State of America</option>
-                        <option value="Kingdom">United Kingdom</option>
-                        <option value="Mexico">Mexico</option>
-                        <option value="Others">Others</option>
-                    </select>
-                    <br>
+    <!-- Name -->
+    <div class="mb-2">
+      <label for="name" class="block text-sm font-medium">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="Your full name" required
+        class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-400">
+    </div>
 
-                    <label for="">message me</label>
-                    <br>
-                    <textarea name="message" id="message" placeholder="message me"></textarea>
-            </form>
-        </div>
+    <!-- Email -->
+    <div class="mb-2">
+      <label for="email" class="block text-sm font-medium">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="your@example.com" required
+        class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-400">
+    </div>
+
+    <!-- Phone -->
+    <div class="mb-4 flex gap-20">
+
+     <div> 
+        <label for="phone" class="block text-sm font-medium">Phone Number</label>
+      <input type="tel" id="phone" name="phone" placeholder="e.g. +1234567890"
+        class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-400">
+    </div>
+
+    <!-- Services -->
+    <div>
+      <label for="service" class="block text-sm font-medium">I'm Interested In</label>
+      <select id="service" name="service"
+        class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-400">
+        <option value="">-- Select a Service --</option>
+        <option value="Full-stack">Full-stack Website</option>
+        <option value="Wordpress">WordPress Development</option>
+        <option value="Landing">Landing Page</option>
+        <option value="websites">Website Design</option>
+        <option value="E-commerce">E-commerce Website</option>
+        <option value="Maintenance">Maintenance & Support</option>
+      </select>
+    </div>
+
+    <!-- Country -->
+    <div>
+      <label for="country" class="block text-sm font-medium">Country</label>
+      <select id="country" name="country"
+        class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-400">
+        <option value="">-- Select Country --</option>
+        <option value="America">United States of America</option>
+        <option value="Kingdom">United Kingdom</option>
+        <option value="Mexico">Mexico</option>
+         <option value="Nigeria">Nigeria</option>
+  <option value="Ghana">Ghana</option>
+  <option value="South Africa">South Africa</option>
+  <option value="Kenya">Kenya</option>
+  <option value="India">India</option>
+  <option value="China">China</option>
+  <option value="Japan">Japan</option>
+  <option value="Germany">Germany</option>
+  <option value="France">France</option>
+  <option value="Italy">Italy</option>
+  <option value="Spain">Spain</option>
+  <option value="Brazil">Brazil</option>
+  <option value="Argentina">Argentina</option>
+  <option value="Australia">Australia</option>
+  <option value="New Zealand">New Zealand</option>
+  <option value="Saudi Arabia">Saudi Arabia</option>
+  <option value="UAE">United Arab Emirates</option>
+  <option value="Turkey">Turkey</option>
+  <option value="Russia">Russia</option>
+        <option value="Others">Others</option>
+      </select>
+    </div>
+ </div>
+    <!-- Message -->
+    <div class="mb-4">
+      <label for="message" class="block text-sm font-medium">Your Message</label>
+      <textarea id="message" name="message" rows="4" placeholder="Type your message here..."
+        class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-400"></textarea>
+    </div>
+
+    <!-- Submit Button -->
+    <div class="text-center">
+      <button type="submit"
+        class="px-6 py-3 rounded-lg text-white bg-orange-500 hover:bg-orange-600 transition">
+        Send Message
+      </button>
+    </div>
+  </form>
+
+</div>
+
+    </section>
+
+    <section>
+        <footer class="bg-gray-900 text-gray-300 py-10">
+  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-8">
+
+    <!-- About -->
+    <div>
+      <h3 class="text-2xl font-bold text-white mb-4">Jokotoye Stephen</h3>
+      <p class="text-sm leading-relaxed">
+        Creative Web Designer & Developer passionate about building
+        clean, functional, and user-friendly digital experiences.
+      </p>
+    </div>
+
+    <!-- Quick Links -->
+    <div>
+      <h4 class="text-xl font-semibold text-white mb-4">Quick Links</h4>
+      <ul class="space-y-2">
+        <li><a href="#about" class="hover:text-orange-400 transition">About</a></li>
+        <li><a href="#projects" class="hover:text-orange-400 transition">Projects</a></li>
+        <li><a href="#services" class="hover:text-orange-400 transition">Services</a></li>
+        <li><a href="#contact" class="hover:text-orange-400 transition">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact & Socials -->
+    <div>
+      <h4 class="text-xl font-semibold text-white mb-4">Get In Touch</h4>
+      <p class="text-sm">📞 +234 814 410 8854</p>
+      <p class="text-sm">📧 jokotoyestephen2023@gmail.com</p>
+      <p class="text-sm mb-4">📍 Ogbomosho, Oyo State</p>
+
+      <div class="flex space-x-4">
+        <a href="https://github.com/" target="_blank" class="hover:text-orange-400 text-2xl"><i class="bx bxl-github"></i></a>
+        <a href="https://linkedin.com/" target="_blank" class="hover:text-orange-400 text-2xl"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://twitter.com/" target="_blank" class="hover:text-orange-400 text-2xl"><i class="bx bxl-twitter"></i></a>
+        <a href="mailto:jokotoyestephen2023@gmail.com" class="hover:text-orange-400 text-2xl"><i class="bx bxl-gmail"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="mt-10 border-t border-gray-700 pt-4 text-center text-sm">
+    <p>&copy; <span id="year"></span> Jokotoye Stephen. All rights reserved.</p>
+  </div>
+</footer>
+
     </section>
     <script src="./sript.js"></script>
 </body>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+
 </html>

@@ -1,4 +1,22 @@
+const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const hamburgerIcon = menuToggle.querySelector('.hamburger');
+    const closeIcon = menuToggle.querySelector('.close');
 
+    menuToggle.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+        hamburgerIcon.classList.toggle('hidden');
+        closeIcon.classList.toggle('hidden');
+    });
+
+    // Close menu when clicking outside on mobile
+    document.addEventListener('click', (e) => {
+        if (!mobileMenu.contains(e.target) && !menuToggle.contains(e.target) && !mobileMenu.classList.contains('hidden')) {
+            mobileMenu.classList.add('hidden');
+            hamburgerIcon.classList.remove('hidden');
+            closeIcon.classList.add('hidden');
+        }
+    });
 
 function darkMood() {
     const light = document.querySelector("#light");
@@ -17,3 +35,8 @@ function darkMood() {
       backDelay: 1000,
       loop: true
     });
+
+      // Auto-update year
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  
