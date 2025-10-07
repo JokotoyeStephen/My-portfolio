@@ -7,11 +7,13 @@
 body {
     background-color: #191717;
     color: #f5f5f5;
+    border-color: #f5f5f5;
     font-family: "Roboto Condensed", sans-serif;
 }
 .money {
     color:#00208A;
     background-color: #f5f5f5;
+    border-color: #00208A;
 }
 
 h1 {
@@ -110,9 +112,13 @@ label{
 input, textarea, select{
     /* background-color: #ff9602; */
     border: 2px solid #ff9602;
-    width: 500px;
-        border-radius: 10px;
 }
 option{
     color: #191717;
+}
+.skill-bar {
+    height: 10px;
+    background-color: orange;
+    transition: width 1s;
+    border-radius: 30px;
 }
