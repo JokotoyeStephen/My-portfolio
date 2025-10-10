@@ -1,3 +1,5 @@
+
+
 const menuToggle = document.getElementById('menu-toggle');
     const mobileMenu = document.getElementById('mobile-menu');
     const hamburgerIcon = menuToggle.querySelector('.hamburger');
@@ -17,6 +19,8 @@ const menuToggle = document.getElementById('menu-toggle');
             closeIcon.classList.add('hidden');
         }
     });
+
+    
 
 function darkMood() {
     const light = document.querySelector("#light");
@@ -39,4 +43,37 @@ function darkMood() {
       // Auto-update year
   document.getElementById("year").textContent = new Date().getFullYear();
 
-  
+// 
+    window.addEventListener("scroll", function () {
+  const navbar = document.getElementById("navbar");
+  if (window.scrollY > 50) {
+    navbar.classList.add("scrolled");
+  } else {
+    navbar.classList.remove("scrolled");
+  }
+});
+
+
+            // const skillsSection = document.getElementById('skills');
+
+            // function fillBars() {
+            //     const bars = document.querySelectorAll('.skill-bar');
+            //     bars.forEach(bar => {
+            //         const skillLevel = bar.getAttribute('data-skill');
+            //         bar.style.width = skillLevel + '%';
+            //     });
+            // }
+
+            // // Detect when the user scrolls to the skills section
+            // const observer = new IntersectionObserver(entries => {
+            //     entries.forEach(entry => {
+            //         if (entry.isIntersecting) {
+            //             fillBars();
+            //             observer.disconnect(); // Stop observing after filling
+            //         }
+            //     });
+            // });
+
+            // observer.observe(skillsSection);
+
+

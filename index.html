@@ -19,7 +19,7 @@
 
 <body id="bodys">
 
-    <section class="flex justify-between items-center shadow fixed w-full">
+    <section class="flex justify-between items-center shadow fixed w-full navbar">
         <img src="./images/AAA.png" alt="" width="70px" class="ms-6" style="border-radius: 70px;">
         <nav class="hidden md:flex gap-8 text-lg pt-4 pr-6">
             <a href="#">Home</a>
@@ -190,15 +190,15 @@
     </section>
 
 
-    <section class="py-24">
+    <section class="ps-24 pe-24">
         <div class="container mx-auto">
             <h1 class="text-3xl font-bold mb-5">e Tech Stack</h1>
-            <div class="grid grid-cols-3 gap-4" id="skills">
+            <div class="grid grid-cols-3 gap-10" id="skills">
                 <div>
                     <h2 class="text-xl font-semibold">Frontend</h2>
-                    <div class="mt-2">
+                    <div class="mt-4">
                         <div class="mb-2 flex justify-between">
-                            <h3>HTML</h3>
+                            <h3>HTML & Css</h3>
                             <p class="me-16">96%</p>
                         </div>
                         <div class="skill-bar w-0" data-skill="96"></div>
@@ -219,7 +219,7 @@
                     </div>
                     <div class="mt-4">
                         <div class="mb-2 flex justify-between">
-                            <h3>Css</h3>
+                            <h3>Thailwind / Bootstrap</h3>
                             <p class="me-16">83%</p>
                         </div>
                         <div class="skill-bar w-0" data-skill="83"></div>
@@ -227,21 +227,21 @@
                 </div>
                 <div>
                     <h2 class="text-xl font-semibold">Mobile</h2>
-                    <div class="mt-2">
+                    <div class="mt-4">
                         <div class="mb-2 flex justify-between">
                             <h3>React Native</h3>
                             <p class="me-16">40%</p>
                         </div>
                         <div class="skill-bar w-0" data-skill="40"></div>
                     </div>
-                    <div class="mt-2">
+                    <div class="mt-4">
                         <div class="mb-2 flex justify-between">
                             <h3>Java</h3>
                             <p class="me-16">60%</p>
                         </div>
                         <div class="skill-bar w-0" data-skill="60"></div>
                     </div>
-                    <div class="mt-2">
+                    <div class="mt-4">
                         <div class="mb-2 flex justify-between">
                             <h3>Flutter</h3>
                             <p class="me-16">20%</p>
@@ -251,7 +251,7 @@
                 </div>
                 <div>
                     <h2 class="text-xl font-semibold">Backend</h2>
-                    <div class="mt-2">
+                    <div class="mt-4">
                         <div class="mb-2 flex justify-between">
                             <h>Node.js</h>
                             </h3>
@@ -259,21 +259,21 @@
                         </div>
                         <div class="skill-bar w-0" data-skill="60"></div>
                     </div>
-                    <div class="mt-2">
+                    <div class="mt-4">
                         <div class="mb-2 flex justify-between">
                             <h3>Python</h3>
                             <p class="me-16">40%</p>
                         </div>
                         <div class="skill-bar w-0" data-skill="40"></div>
                     </div>
-                    <div class="mt-2">
+                    <div class="mt-4">
                         <div class="mb-2 flex justify-between">
                             <h3>React</h3>
                             <p class="me-16">15%</p>
                         </div>
                         <div class="skill-bar w-0" data-skill="15"></div>
                     </div>
-                    <div class="mt-2">
+                    <div class="mt-4">
                         <div class="mb-2 flex justify-between">
                             <h3>Next.js</h3>
                             <p class="me-16">30%</p>
@@ -613,7 +613,7 @@
                 });
             }
 
-            // Detect when the user scrolls to the skills section
+            // Detect when the user scrolls to the skills section 
             const observer = new IntersectionObserver(entries => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {

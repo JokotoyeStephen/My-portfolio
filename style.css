@@ -47,6 +47,19 @@ h1 {
 .hero {
     margin: auto;
 }
+
+.navba{
+    position: fixed;
+    background-color: #f5f5f5;
+}
+.navbar.scrolled {
+  background: #ff9602; /* new background */
+  padding: 10px 40px;  /* smaller height */
+  border-radius: 0 0 15px 15px; /* shape change */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+
 .features {
     font-size: 30px;
     color: #ff9602;
