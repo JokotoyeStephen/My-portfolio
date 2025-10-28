@@ -31,10 +31,20 @@ h1 {
     padding: 6px 10px;
     background-color: #f69916;
     color: #f5f5f5;
+     transition: background-color 0.3s ease-out, transform 0.3s ease-out;
     border-radius: 10px;
     box-shadow: 4px 1px 1px 1px rgba(0,0,0,0.63);
     -webkit-box-shadow: 8px 11px 13px -7px rgba(0,0,0,0.73);
     -moz-box-shadow: 8px 11px 13px -5px rgba(0,0,0,0.73);
+}
+.btn:hover{
+    /* display: none; */
+    border: 3px solid #f69916;
+    background-color: rgba(0,0,0,0.07);
+    transition: 2;
+    color: #f69916;
+    font-weight: 700;
+    transform: scale(1.05);
 }
 .icon_1 i{
     border: 2px s;
@@ -104,10 +114,6 @@ h1 {
 }
 .para {
     color: #ff9602;
-}
-.btn1 {
-    padding: 7px;
-    border-radius: 20px;
 }
 
 .rand1 {
