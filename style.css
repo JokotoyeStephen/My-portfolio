@@ -11,9 +11,9 @@ body {
     font-family: "Roboto Condensed", sans-serif;
 }
 .money {
-    color:#00208A;
+    color:#00008B;
     background-color: #f5f5f5;
-    border-color: #00208A;
+    border-color: #00008B;
 }
 
 h1 {
@@ -23,12 +23,13 @@ h1 {
     position: fixed;
 }
 
+
 .welcome {
     font-weight: 600;
 }
 .btn {
     padding: 6px 10px;
-    background-color: #ff9602;
+    background-color: #f69916;
     color: #f5f5f5;
     border-radius: 10px;
     box-shadow: 4px 1px 1px 1px rgba(0,0,0,0.63);
@@ -48,15 +49,13 @@ h1 {
     margin: auto;
 }
 
-.navba{
-    position: fixed;
-    background-color: #f5f5f5;
+.navbar{
+
 }
 .navbar.scrolled {
-  background: #ff9602; /* new background */
-  padding: 10px 40px;  /* smaller height */
-  border-radius: 0 0 15px 15px; /* shape change */
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+     background-color: rgba(255,255,255,0.07);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3),
+            0 2px 8px rgba(255, 255, 255, 0.05); 
 }
 
 
@@ -64,18 +63,30 @@ h1 {
     font-size: 30px;
     color: #ff9602;
 }
+.cooler{
+    background-color: rgba(255,255,255,0.07);
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3),
+    0 2px 8px rgba(255, 255, 255, 0.05);
+}
+.cool{
+     background-color: rgba(255,255,255,0.07);
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3),
+    0 2px 8px rgba(255, 255, 255, 0.05);
+     padding: 20px;
+}
 .card{
     /* border: 7px solid #ecebea; */
     padding: 30px;
     background-color: rgba(255,255,255,0.07);
     border-radius: 10px;
-    box-shadow: 4px 1px 1px 1px rgba(43, 1, 121, 0.63);
-    -webkit-box-shadow: 8px 11px 13px -7px rgba(14, 14, 14, 0.73);
-    -moz-box-shadow: 8px 11px 13px -5px rgba(248, 248, 248, 0.73);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3),
+            0 2px 8px rgba(255, 255, 255, 0.05);
     /* box-shadow: 2px 2px 3px 2px rgba(246, 144, 0, 0.5); */
 }
 .card:hover {
-    background-color:rgba(242, 182, 16, 0.1);
+    /* background-color:rgba(255,255,255,0.07); */
 }
 .card h3 {
     font-size: 20px;
@@ -98,15 +109,7 @@ h1 {
     padding: 7px;
     border-radius: 20px;
 }
-.nop {
-    border: 2px solid #ff9602;
-    width: 133.5px;
-    border-radius: 20PX;
-}
-.ikon{
-    border: 2px solid #ff9602;
-    border-radius: 50%;
-}
+
 .rand1 {
     margin-top: 5px;
 }

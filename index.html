@@ -19,14 +19,14 @@
 
 <body id="bodys">
 
-    <section class="flex justify-between items-center shadow fixed w-full navbar">
+    <section id="navbar" class="flex justify-between items-center shadow fixed w-full navbar">
         <img src="./images/AAA.png" alt="" width="70px" class="ms-6" style="border-radius: 70px;">
         <nav class="hidden md:flex gap-8 text-lg pt-4 pr-6">
             <a href="#">Home</a>
-            <a href="#service">Our Services</a>
             <a href="#about">About Us</a>
+            <a href="#service">Our Services</a>
             <a href="">Testimonial</a>
-            <a href="" class="btn mb-" id="btn">Contact Us</a>
+            <a href="" class="btn" id="btn">Contact Us</a>
         </nav>
         <button class="md:hidden mr-4 focus:outline-none" id="menu-toggle" aria-label="Toggle menu">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -36,8 +36,8 @@
         <div class="hidden absolute top-16 left-0 w-full shadow-md md:hidden" id="mobile-menu">
             <nav class="flex flex-col items-center gap-4 py-4 text-lg">
                 <a href="#">Home</a>
-                <a href="#service">Our Services</a>
                 <a href="#about">About Us</a>
+                <a href="#service">Our Services</a>
                 <a href="">Testimonial</a>
                 <a href="" class="btn" id="btn">Contact Us</a>
 
@@ -50,12 +50,13 @@
     <img src="./images/img.png" alt="" width="20px" height="20px" id="light" onclick="darkMood()">
 
 
-    <section class="flex gap-30 pt-24" class="hero">
+    <section class="lg:flex gap-30 pt-24" class="hero">
         <div class="ps-24 pt-20">
-            <p class="welcome">WELCOME TO MY WORLD</p>
-            <h1 class="text-5xl">HI, I'm <SPan style="color: #ff9602;font-weight: 500;">Stephen Jokotoye</SPan> a <span
+            <p class="text-lg welcome">WELCOME TO MY WORLD</p>
+            <h1 class="text-6xl">HI, I'm <SPan style="color: #ff9602;font-weight: 500;">Stephen Jokotoye</SPan> a <span
                     id="typed"> Full stack developer</span></h1>
-            <p class="pt-4">I’m a Full-stack web developer focused on building responsive, user-centric and interractive
+            <p class="pt-4 text-lg text-justify">I’m a Full-stack web developer focused on building responsive,
+                user-centric and interractive
                 websites, Building innovative web Solutions while Transforming ideas into Reality. With tools like
                 HTML, Tailwind CSS and React, Node.js, MongoDB etc. I craft clean, modern interfaces, Delivering
                 high-quality web solutions that exceed expecations and drive results. I value performance,
@@ -79,11 +80,69 @@
         <div class="pe-10"><img src="./images/ef13771bd3956c84ed21a57c10cf05ee-removebg-preview (2).png" alt=""
                 width="2000px"></div>
     </section>
+
+
+    <section class="mt-24 me-24 ms-24 p-10 rounded-2xl" id="about">
+        <div class="lg:flex gap-12">
+            <div class="cooler">
+                <img src="./images/ef13771bd3956c84ed21a57c10cf05ee-removebg-preview (2).png" alt="" width="1000px">
+            </div>
+            <div class="about card pt-10 md:mt-6 sm:mt-6">
+                <p class="text-xl"><span style="color: #ff9602;">--- </span>About Me</p>
+                <h2 class="text-5xl">Who is <span
+                        style="color: #ff9602;font-family: 'Fredoka', sans-serif; font-weight: 600;">Jokotoye
+                        Stephen</span></h2>
+                <p class="pt-4 text-lg text-justify"> I am a passionate web developer specializing in creating
+                    responsive, user-friendly
+                    websites and applications. Skilled in frontend and backend development, I love solving problems and
+                    turning ideas into reality using modern technologies like HTML, CSS, JavaScript, Tailwind, Node.js,
+                    and MongoDB.</p>
+                <div class="flex gap-4 mt-4">
+                    <!-- Contact Info -->
+                    <div class="space-y-6 cool">
+                        <div class="flex gap-4">
+                            <div class="text-orange-500 text-2xl"><i class="bx bxs-phone"></i></div>
+                            <p class="text-xl">+234 8144108854</p>
+                        </div>
+                        <div class="flex gap-6">
+                            <div class="text-orange-500 text-2xl"><i class="bx bxl-gmail"></i></div>
+                            <p class="text-xl">jokotoyestephen2023@gmail.com</p>
+                        </div>
+                        <div class="flex gap-6">
+                            <div class="text-orange-500 text-2xl"> <i class="bx bx-current-location"></i></div>
+                            <p class="text-xl">Ogbomos, Oyo State.</p>
+                        </div>
+                    </div>
+                    <div class="cool">
+                    <div class="flex pt-6 justify-between">
+                        <div>
+                            <h3 style="color: #ff9602; font-family: 'Fredoka', sans-serif;" class="text-5xl">10+</h3>
+                            <p>Project Completed</p>
+                        </div>
+                        <div>
+                            <h3 style="color: #ff9602;font-family: 'Fredoka', sans-serif;" class="text-5xl">20+</h3>
+                            <p>Industry Covered</p>
+                        </div>
+                        <div>
+                            <h3 style="color: #ff9602; font-family: 'Fredoka', sans-serif;" class="text-5xl">2+</h3>
+                            <p>Years of Experience</p>
+                        </div>
+                    </div>
+                    <div class="nop flex">
+                        <button class="btn1"><a href="">Download Cv</a></button>
+                        <p class="ikon text">(---- )</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
     <section class="mt-24 ps-24 pe-24" id="service">
         <p class="features  text-xl ">FEATURES</p>
         <h2 class="text-5xl">WHAT I DO</h2>
         <div class="card_section mt-4">
-            <div class="card flex gap-6">
+            <div class="card lg:flex lg:gap-6 sm:mt-2 mx-auto">
                 <p class="text-4xl"> <i class='bx bx-laptop'></i></p>
                 <div>
                     <h3>Web Development </h3>
@@ -153,44 +212,7 @@
     </section>
 
 
-    <section class="mt-32 pe-24 ps-24" id="about">
-        <div class="flex gap-20">
-            <div>
-                <img src="./images/ef13771bd3956c84ed21a57c10cf05ee-removebg-preview (2).png" alt="" width="1000px">
-            </div>
-            <div class="about">
-                <p class="text-xl"><span style="color: #ff9602;">--- </span>About Me</p>
-                <h2 class="text-5xl">Who is <span
-                        style="color: #ff9602;font-family: 'Fredoka', sans-serif; font-weight: 600;">Jokotoye
-                        Stephen</span></h2>
-                <p class="pt-4"> I am a passionate web developer specializing in creating responsive, user-friendly
-                    websites and applications. Skilled in frontend and backend development, I love solving problems and
-                    turning ideas into reality using modern technologies like HTML, CSS, JavaScript, Tailwind, Node.js,
-                    and MongoDB.</p>
-                <div class="flex pt-6 justify-between">
-                    <div>
-                        <h3 style="color: #ff9602; font-family: 'Fredoka', sans-serif;" class="text-5xl">10+</h3>
-                        <p>Project Completed</p>
-                    </div>
-                    <div>
-                        <h3 style="color: #ff9602;font-family: 'Fredoka', sans-serif;" class="text-5xl">20+</h3>
-                        <p>Industry Covered</p>
-                    </div>
-                    <div>
-                        <h3 style="color: #ff9602; font-family: 'Fredoka', sans-serif;" class="text-5xl">2+</h3>
-                        <p>Years of Experience</p>
-                    </div>
-                </div>
-                <div class="nop flex">
-                    <button class="btn1"><a href="">Download Cv</a></button>
-                    <p class="ikon text">(---- )</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="ps-24 pe-24">
+    <section class="mt-24 ps-24 pe-24">
         <div class="container mx-auto">
             <h1 class="text-3xl font-bold mb-5">e Tech Stack</h1>
             <div class="grid grid-cols-3 gap-10" id="skills">
@@ -399,7 +421,7 @@
         <div class="flex flex-col md:flex-row gap-8 pt-12">
 
             <!-- Contact Info -->
-            <div class="w-full md:w-1/3 space-y-6">
+            <div class="w-full md:w-1/3 space-y-6 cool">
                 <div class="flex gap-6 rand1">
                     <i class="bx bxs-phone"></i>
                     <p class="text-xl">+234 (081) 8144108854</p>
@@ -421,14 +443,14 @@
 
             </div>
             <!-- Contact Form -->
-            <form action="/submit" method="POST" class="w-full md:w-2/3 pe-24">
+            <form action="/submit" method="POST" class="w-full md:w-2/3 me-24 cool">
 
                 <div class="flex justify-between gap-20">
                     <!-- Name -->
                     <div class="mb-2 w-1/2">
                         <label for="name" class="block text-sm font-medium">Full Name</label>
                         <input type="text" id="name" name="name" placeholder="Your full name" required
-                            class="mt-1 block w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-400">
+                            class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-400">
                     </div>
 
                     <!-- Email -->
@@ -593,10 +615,6 @@
                     </div>
                 </div>
 
-                <div class="border-t border-gray-800 pt-4 text-center">
-                    <p class="text-white">Hospital. All rights reserved. Designed with <i
-                            class="fas fa-heart text-sky-500"></i> for better healthcare.</p>
-                </div>
             </div>
         </footer>
 
