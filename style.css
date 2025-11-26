@@ -58,6 +58,7 @@ h1 {
     box-shadow: 2px 2px 3px 2px rgba(246, 144, 0, 0.5);
 } 
 .icon_2 i{
+    /* display: none; */
     border: 2px s;
     border-radius: 50%;
     font-size: 30px;
@@ -198,4 +199,13 @@ option{
     display: grid;
     grid-template-columns: 3fr 3fr 3fr;
     gap: 20px;
+}
+@media (max-width: 768px) {
+    .whatido{
+    display: block;
+    margin-top: 20px;
+}
+.icon_2 i{
+    display: none;
+}
 }
