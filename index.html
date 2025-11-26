@@ -21,35 +21,37 @@
 
     <section id="navbar" class="flex justify-between items-center shadow fixed w-full navbar">
         <img src="./images/AAA.png" alt="" width="70px" class="ms-6" style="border-radius: 70px;">
-        <nav class="hidden md:flex gap-8 text-lg pt-4">
-            <a href="#">Home</a>
-            <a href="#about">About Us</a>
-            <a href="#service">Our Services</a>
-            <a href="">Testimonial</a>
-            <a href="" class="" id="btn">Contact Me</a>
+        <nav class="hidden md:flex gap-16 text-lg pt-4">
+            <p> <a href="#">Home</a></p>
+            <p class="hover:text-orange-400"><a href="#about">About Us</a></p>
+            <p class="hover:text-orange-400"><a href="#service">Our Services</a></p>
+            <p class="hover:text-orange-400"> <a href="">Testimonial</a></p>
+            <p class="hover:text-orange-400"> <a href="">Projects</a></p>
+            <p class="hover:text-orange-400"><a href="#contact" class="" id="btn">Contact Me</a></p>
         </nav>
         <button class="md:hidden mr-4 focus:outline-none" id="menu-toggle" aria-label="Toggle menu">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
         </button>
-         <div class="flex justify-between">
-                <div class="icon_2 pt-4 flex gap-4 me-24">
-                    <a href="https://github.com/JokotoyeStephen"> <i class='bx bxl-github text-4xl'></i></a>
-                    <a href=""> <i class='bx bxl-linkedin-square text-4xl'></i></a>
-                    <a href=""><i class='bx bxl-whatsapp-square  text-4xl'></i> </a>
-                </div>
-        <div class="hidden absolute top-16 left-0 w-full shadow-md md:hidden" id="mobile-menu">
-            <nav class="flex flex-col items-center gap-4 py-4 text-lg">
-                <a href="#">Home</a>
-                <a href="#about">About Us</a>
-                <a href="#service">Our Services</a>
-                <a href="">Testimonial</a>
-                <a href="" class="btn" id="btn">Contact Us</a>
+        <div class="flex justify-between">
+            <div class="icon_2 pt-4 flex gap-10 me-24  md:hidden sm:hidden lg:block">
+                <a href="https://github.com/JokotoyeStephen"> <i class='bx bxl-github text-4xl px-2'></i></a>
+                <a href=""> <i class='bx bxl-linkedin-square text-4xl px-2'></i></a>
+                <a href=""><i class='bx bxl-whatsapp-square  text-4xl px-2'></i> </a>
+            </div>
+            <div class="hidden absolute top-16 left-0 w-full shadow-md md:hidden" id="mobile-menu">
+                <nav class="flex flex-col items-center gap-4 py-4 text-lg">
+                    <a href="#">Home</a>
+                    <a href="#about">About Us</a>
+                    <a href="#service">Our Services</a>
+                    <a href="">Testimonial</a>
+                    <a href="">Projects</a>
+                    <a href="#contact" class="btn" id="btn">Contact Us</a>
 
-            </nav>
-        </div>
-        
+                </nav>
+            </div>
+
     </section>
 
 
@@ -58,11 +60,15 @@
 
 
     <section class="lg:flex gap-30 pt-28" class="hero" id="#home">
-        <div class="ps-24 pt-20">
-            <p class="text-lg welcome">WELCOME TO MY WORLD</p>
+        <div class="lg:ps-24 lg:pt-20 sm:ps-10 sm:pe-10 sm:pt-20">
+            <div class="lg:hidden mb-10">
+                <img src="./images/about-us-img.png" alt="" width="800px">
+            </div>
+            <p class="text-lg font-semibold">WELCOME TO MY WORLD</p>
             <h1 class="text-6xl">HI, I'm <SPan style="color: #ff9602;font-weight: 500;">Stephen Jokotoye</SPan> a <span
                     id="typed"> Full stack developer</span></h1>
-            <p class="pt-4 text-lg text-justify">I’m a Full-stack web developer focused on building responsive,
+            <p class="lg:text-lg pt-4 text-justify sm:text-sm">I’m a Full-stack web developer focused on building
+                responsive,
                 user-centric and interractive
                 websites, Building innovative web Solutions while Transforming ideas into Reality. With tools like
                 HTML, Tailwind CSS and React, Node.js, MongoDB etc. I craft clean, modern interfaces, Delivering
@@ -88,19 +94,19 @@
                 </div>
             </div>
         </div>
-        <div class="pe-10"><img src="./images/ef13771bd3956c84ed21a57c10cf05ee-removebg-preview (2).png" alt=""
-                width="2000px"></div>
+        <div class="pe-10 sm:hidden md:hidden lg:block"><img
+                src="./images/ef13771bd3956c84ed21a57c10cf05ee-removebg-preview (2).png" alt="" width="2000px"></div>
     </section>
 
 
-    <section class="mt-24 me-24 ms-24 p-10 rounded-2xl" id="about">
+    <section class="mt-24 me-24 ms-24 p-10 card rounded-2xl" id="about">
         <div class="lg:flex gap-12">
             <div>
                 <img src="./images/about-us-img.png" alt="" width="1200px">
             </div>
-            <div class="about card ps-12 pe-12 md:mt-6 sm:mt-6">
-                <p class="text-xl"><span style="color: #ff9602;">--- </span>About Me</p>
-                <h2 class="text-5xl">Who is <span
+            <div class="about p-12 md:mt-6 sm:mt-6">
+                <p class="text-xl novate">About Me</p>
+                <h2 class="text-5xl mt-2">Who is <span
                         style="color: #ff9602;font-family: 'Fredoka', sans-serif; font-weight: 600;">Jokotoye
                         Stephen</span></h2>
                 <p class="pt-4 text-lg text-justify"> I am a passionate web developer specializing in creating
@@ -109,10 +115,11 @@
                     turning ideas into reality using modern technologies like HTML, CSS, JavaScript, Tailwind, Node.js,
                     and MongoDB.</p>
 
-                <div class="flex gap-4 mt-4">
+                <div class="lg:flex gap-4 mt-4">
                     <!-- Contact Info -->
-                    <div class="space-y-6 mood">
-                        <h2 style="color: #ff9602;font-family: 'Fredoka', sans-serif;"class="text-center text-2xl font-bold" >Quick link</h2>
+                    <div class="space-y-4 mood">
+                        <h2 style="color: #ff9602;font-family: 'Fredoka', sans-serif;"
+                            class="text-center text-2xl font-bold">Contact</h2>
                         <div class="flex gap-6">
                             <a href=""><i class="bx bxl-gmail text-2xl run"></i></a>
                             <p class="text-lg">jokotoyestephen2023@gmail.com</p>
@@ -125,21 +132,24 @@
                             <a href=""><i class='bx bxl-linkedin-square text-2xl run'></i></a>
                             <p class="text-lg">Jokotoye Stephen</p>
                         </div>
-                       
+
                     </div>
-                    <div class="cool" id="stats">
-                        <div class="flex pt-6 justify-between gap-2">
-                            <div class="mood text-center">
-                                <h3 style="color: #ff9602;font-family: 'Fredoka', sans-serif;" class="text-5xl counter" data-target="5">-</h3>
+                    <div class="cool  sm:mt-4 md:mt-4" id="stats">
+                        <div class="lg:flex pt- justify-between gap-4">
+                            <div class="mood text-center sm:mt-4 md:mt-4">
+                                <h3 style="color: #ff9602;font-family: 'Fredoka', sans-serif;" class="text-5xl counter"
+                                    data-target="5">-</h3>
                                 <p class="mt-4">Project Completed</p>
                             </div>
 
-                            <div class="mood text-center">
-                                <h3 style="color: #ff9602;font-family: 'Fredoka', sans-serif;" class="text-7xl counter" data-target="10">-2</h3>
+                            <div class="mood text-center sm:mt-4 md:mt-4">
+                                <h3 style="color: #ff9602;font-family: 'Fredoka', sans-serif;" class="text-7xl counter"
+                                    data-target="10">-2</h3>
                                 <p class="mt-4">Industry Covered</p>
                             </div>
-                            <div class="mood text-center">
-                             <h3 style="color: #ff9602;font-family: 'Fredoka', sans-serif;" class="text-5xl counter" data-target="4">-2</h3>
+                            <div class="mood text-center sm:mt-4 md:mt-4">
+                                <h3 style="color: #ff9602;font-family: 'Fredoka', sans-serif;" class="text-5xl counter"
+                                    data-target="4">-2</h3>
 
                                 <p class="mt-4">Years of Experience</p>
                             </div>
@@ -160,9 +170,9 @@
     <section class="mt-24 ps-24 pe-24" id="service">
         <p class="features  text-xl ">FEATURES</p>
         <h2 class="text-5xl">WHAT I DO</h2>
-        <div class="card_section mt-4">
-            <div class="card lg:flex lg:gap-6 sm:mt-2 mx-auto">
-                <p class="text-4xl"> <i class='bx bx-laptop'></i></p>
+        <div class="whatido">
+            <div class="card gap-6 lg:flex mt-2">
+                <p class="text-5xl"> <i class='bx bx-laptop'></i></p>
                 <div>
                     <h3>Web Development </h3>
                     <ul class="pt-2">
@@ -172,30 +182,32 @@
                     </ul>
                 </div>
             </div>
-            <div class="card flex gap-6">
-                <p class="text-4xl"><i class='bx bx-code-curly'></i></p>
+            <div class="card gap-6 mt-2 lg:flex">
+                <p class="text-5xl"><i class='bx bx-code-curly'></i></p>
                 <div>
                     <h3>Software Engineering</h3>
                     <ul class="pt-2">
                         <li>Software Development</li>
                         <li>System Software</li>
+                        <li>System Software</li>
                         <li>Devops and CI/CD.</li>
                     </ul>
                 </div>
             </div>
-            <div class="card flex gap-6">
-                <p class="text-4xl"><i class='bx bxl-wordpress'></i></p>
+            <div class="card gap-6 mt-2 lg:flex">
+                <p class="text-5xl"><i class='bx bxl-wordpress'></i></p>
                 <div>
                     <h3> Wordpress Development</h3>
                     <ul class="pt-2">
                         <li>Network Architecture</li>
                         <li>Wireless Communication</li>
                         <li>Internet of Things (IoT).</li>
+                        <li>Internet of Things (IoT).</li>
                     </ul>
                 </div>
             </div>
-            <div class="card flex gap-6">
-                <p class="text-4xl"><i class='bx bx-brain'></i></p>
+            <div class="card gap-6 mt-2 lg:flex">
+                <p class="text-5xl"><i class='bx bx-brain'></i></p>
                 <div>
                     <h3> Artificial Intelligence (AI)</h3>
                     <ul class="pt-2">
@@ -205,8 +217,8 @@
                     </ul>
                 </div>
             </div>
-            <div class="card flex gap-6">
-                <p class="text-4xl"><i class='bx bx-mobile-alt'></i></p>
+            <div class="card gap-6 mt-2 lg:flex">
+                <p class="text-5xl"><i class='bx bx-mobile-alt'></i></p>
                 <div>
                     <h3> Cybersecurity </h3>
                     <ul class="pt-2">
@@ -216,8 +228,8 @@
                     </ul>
                 </div>
             </div>
-            <div class="card flex gap-6">
-                <p class="text-4xl"><i class='bx bx-shield-quarter'></i></p>
+            <div class="card gap-6 mt-2 lg:flex">
+                <p class="text-5xl"><i class='bx bx-shield-quarter'></i></p>
                 <div>
                     <h3> Mobile App Development </h3>
                     <ul class="pt-2">
@@ -233,10 +245,10 @@
 
     <section class="mt-24 ps-24 pe-24">
         <div class="container mx-auto">
-            <p class="text-xl">MY SKILLS</p>
+            <p class="text-xl lists">MY SKILLS</p>
             <h2 class="text-5xl font-bold mb-5" style="font-family: fredoka;">e Tech Stack</h2>
-            <div class="grid grid-cols-4 gap-4" id="skills">
-                <div>
+            <div class="lg:grid lg:grid-cols-2 lg:gap-8" id="skills">
+                <div class="sm:mt-4 md:mt-4">
                     <p style="color: #ff9602;">My Skills</p>
                     <h2 class="text-3xl mt-2 mb-4">How can I assist with the upcoming project?</h2>
                     <p class="mb-4 text-justify">Certainly, I can help you create a description for your next project.
@@ -244,10 +256,30 @@
                         need more specific information about the project itself. Please provide details such as the
                         project's purpose, goals, scope, and any relevant information, and I'll assist you in crafting a
                         suitable project description.</p>
-                    <button class="btn1 mt-2"><a href="">Download Resume</a></button>
+
+                    <div class="flex gap-10 lg:ps-8 md:ps-6 sm:ps-2 mt-2">
+                        <div class="">
+                            <h3>Soft skill</h3>
+                            <p class="lists">Communication</p>
+                            <p class="lists">Critical Thinking</p>
+                            <p class="lists">Time Management</p>
+                        </div>
+                        <div class="">
+                            <h3>Soft skill</h3>
+                            <p class="lists">Teamwork</p>
+                            <p class="lists">Communication</p>
+                            <p class="lists">Time Management</p>
+                        </div>
+                        <div class="">
+                            <h3>Soft skill</h3>
+                            <p class="lists">Teamwork</p>
+                            <p class="lists">Communication</p>
+                            <p class="lists">Critical Thinking</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="cool">
-                    <h2 class="text-xl font-semibold">Frontend</h2>
+                <div class="cool sm:mt-4 md:mt-4">
+                    <h2 class="text-2xl font-semibold">Frontend</h2>
                     <div class="mt-4">
                         <div class="mb-2 flex justify-between">
                             <h3>HTML & Css
@@ -296,8 +328,8 @@
                     </div>
                 </div>
 
-                <div class="cool">
-                    <h2 class="text-xl font-semibold">Backend</h2>
+                <div class="cool sm:mt-4 md:mt-4">
+                    <h2 class="text-2xl font-semibold">Backend</h2>
                     <div class="mt-4">
 
                         <div class="mb-2 flex justify-between">
@@ -348,8 +380,8 @@
                 </div>
 
 
-                <div class="cool">
-                    <h2 class="text-xl font-semibold">Graphics</h2>
+                <div class="cool sm:mt-4 md:mt-4">
+                    <h2 class="text-2xl font-semibold">Graphics</h2>
                     <div class="mt-4">
                         <div class="mb-2 flex justify-between">
                             <h3>Photoshop
@@ -388,7 +420,7 @@
                     </div>
                     <div class="mt-4">
                         <div class="mb-2 flex justify-between">
-                            <h3>Thailwind
+                            <h3>Canva
                                 <i class='bx bxl-tailwind-css'></i>
                             </h3>
                             <p class="me-16">75%</p>
@@ -402,96 +434,76 @@
 
 
 
-    <section class="mt-24 ps-24">
+    <section class="mt-24 lg:ps-24">
         <p class="text-xl text-center">--- Projects & Work </p>
         <h2 class="text-5xl mt-2 text-center">Individual <span style="color: #ff9602;">Projects</span> <br> &
             collaborations <span style="color: #ff9602;">Projects</span></h2>
         <div class="ps-24 gap-10 pe-24 mt-4 pt-6 " id="cardo">
-            <div class="card pe-10">
-                <img src="" alt="">
-                <div class="lists">
-                    <h2>Hotel Management & Booking System</h2>
+            <div class="card pe-10 flex gap-10">
+                <img src="./images/contact1.png" alt="">
+                <div>
+                    <h2 class="lists  text-3xl">Hotel Management & Booking System</h2>
                     <p class="para">B.Tech</p>
-                </div>
-                <div class="lists">
                     <p class="para">2024 - 2025</p>
                     <h4>Lautech Software Institue</h4>
                     <p class="para">Software Engineering</p>
                 </div>
             </div>
-            <div class="card mt-4">
-                <img src="" alt="">
-                <div class="lists">
-                    <h2>Mutil-Language Translator</h2>
+             <div class="card pe-10 flex gap-10 mt-4">
+                <img src="./images/contact1.png" alt="">
+                <div>
+                    <h2 class="lists text-3xl">Hotel Management & Booking System</h2>
                     <p class="para">B.Tech</p>
-                </div>
-                <div class="lists">
                     <p class="para">2024 - 2025</p>
                     <h4>Lautech Software Institue</h4>
                     <p class="para">Software Engineering</p>
                 </div>
             </div>
-            <div class="card mt-4">
-                <img src="" alt="">
-                <div class="lists">
-                    <h4>Ladoke Akintola University of Technology</h4>
+            <div class="card pe-10 flex gap-10 mt-4">
+                <img src="./images/contact1.png" alt="">
+                <div>
+                    <h2 class="lists  text-3xl">Hotel Management & Booking System</h2>
                     <p class="para">B.Tech</p>
-                </div>
-                <div class="lists">
                     <p class="para">2024 - 2025</p>
                     <h4>Lautech Software Institue</h4>
                     <p class="para">Software Engineering</p>
                 </div>
             </div>
-
         </div>
         </div>
     </section>
 
-    <section class="ps-24 mt-32 cool">
-        <p class="text-xl pt-8 text-center">--- Contact Me</p>
+    <section class="lg:ps-24 mt-32 pb-12 cooler">
+        <p class="text-xl pt-8 text-center"> Contact Me</p>
         <h2 class="text-4xl mb-2 text-center">Let talk for <span style="color: #ff9602;">Your next Project</span></h2>
         <p class="text-xl text-center">Have a project in mind or just want to say hi?</p>
 
         <div class="flex flex-col md:flex-row gap-8 pt-12">
 
             <!-- Contact Info -->
-            <div class="w-full md:w-1/3 space-y-6 mood">
-                <p class="text-xl"><span style="color: #ff9602;">GET IN TOUCH</span></p>
-                <h2 class="text-xl">Elevate your brand with Me</h2>
-                <div class="flex gap-6 rand1">
-                    <p>Have a project in mind, a question, or just want to say hello? Feel free to reach out!I’m always
-                        open to discussing.</p>
-                </div>
-                <div class="cool text-left">
-                    <div class="flex">
-                        <div class="flex bg-orange-600 gap-4">
-                            <a href=""><i class="bx bxs-phone text-2xl"></i></a>
-                            <p class="text-lg">+234 8144108854</p>
-                        </div>
-                        <div class="flex">
-                            <a href="https://github.com/JokotoyeStephen"><i class='bx bxl-github text-2xl'></i></a>
-                            <p class="text-lg">JokotoyeStephen </p>
-                        </div>
-                    </div>
-                    <div class="flex">
-                        <a href=""><i class="bx bxl-gmail text-2xl"></i></a>
+            <div class="w-full md:w-1/3 space-y-6  px-8 py-8 cooler">
+                <img src="./images/contact1.png" alt="" class="border rounded-lg">
+                <!-- Contact Info -->
+                <div class="space-y-4 mood">
+                    <h2 style="color: #ff9602;font-family: 'Fredoka', sans-serif;"
+                        class="text-center text-2xl font-bold">GET IN TOUCH</h2>
+                    <div class="flex gap-6">
+                        <a href=""><i class="bx bxl-gmail text-2xl run"></i></a>
                         <p class="text-lg">jokotoyestephen2023@gmail.com</p>
                     </div>
+                    <div class="flex gap-8">
+                        <a href="https://github.com/JokotoyeStephen"><i class='bx bxl-github text-2xl run'></i></a>
+                        <p class="text-lg">JokotoyeStephen </p>
+                    </div>
+                    <div class="flex gap-8">
+                        <a href=""><i class='bx bxl-linkedin-square text-2xl run'></i></a>
+                        <p class="text-lg">Jokotoye Stephen</p>
+                    </div>
 
-                    <div class="flex">
-                        <a href=""><i class='bx bxl-linkedin-square text-2xl'></i></a>
-                        <p class="text-lg">Jokotoye Stephen</p>
-                    </div>
-                    <div class="flex">
-                        <a href=""><i class='bx bxl-whatsapp-square text-2xl'></i></a>
-                        <p class="text-lg">Jokotoye Stephen</p>
-                    </div>
                 </div>
             </div>
-
             <!-- Contact Form -->
-            <form action="/contact" method="POST" class="w-full md:w-2/3 me-24 mood">
+            <form action="/contact" method="POST" class="w-full md:w-2/3  space-y-6  px-8 py-8  me-24 cooler">
 
                 <div class="flex justify-between gap-6">
                     <!-- Name -->
@@ -733,5 +745,7 @@
 </body>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+
+</html>
 
 </html>
