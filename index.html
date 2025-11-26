@@ -126,23 +126,24 @@
                             <p class="text-lg">Jokotoye Stephen</p>
                         </div>
                     </div>
-                    <div class="cool">
+                    <div class="cool" id="stats">
                         <div class="flex pt-6 justify-between gap-2">
-                            <div class="mood">
-                                <h3 style="color: #ff9602; font-family: 'Fredoka', sans-serif;" class="text-5xl">10+
-                                </h3>
-                                <p class="mt-6">Project Completed</p>
+                            <div class="mood text-center">
+                                <h3 style="color: #ff9602;font-family: 'Fredoka', sans-serif;" class="text-5xl counter" data-target="5">-</h3>
+                                <p class="mt-4">Project Completed</p>
                             </div>
-                            <div class="mood">
-                                <h3 style="color: #ff9602;font-family: 'Fredoka', sans-serif;" class="text-5xl">20+</h3>
-                                <p class="mt-6">Industry Covered</p>
+
+                            <div class="mood text-center">
+                                <h3 style="color: #ff9602;font-family: 'Fredoka', sans-serif;" class="text-7xl counter" data-target="10">-2</h3>
+                                <p class="mt-4">Industry Covered</p>
                             </div>
-                            <div class="mood">
-                                <h3 style="color: #ff9602; font-family: 'Fredoka', sans-serif;" class="text-5xl">2+</h3>
-                                <p class="mt-6">Years of Experience</p>
+                            <div class="mood text-center">
+                             <h3 style="color: #ff9602;font-family: 'Fredoka', sans-serif;" class="text-5xl counter" data-target="4">-2</h3>
+
+                                <p class="mt-4">Years of Experience</p>
                             </div>
                         </div>
-                        <div class="flex gap-4 mt-4">
+                        <div class="flex gap-4 mt-4 justify-center">
                             <button class="btn1 mt-2"><a href="">Download Resume</a></button>
                             <button class="btn1 mt-2"><a href="">Contact Me</a></button>
                         </div>
@@ -152,6 +153,9 @@
         </div>
         </div>
     </section>
+
+
+
     <section class="mt-24 ps-24 pe-24" id="service">
         <p class="features  text-xl ">FEATURES</p>
         <h2 class="text-5xl">WHAT I DO</h2>
@@ -587,11 +591,12 @@
                     <!-- Column 1 -->
                     <div>
                         <div class="items-center mb-6">
-                          <div class="flex gap-8"> 
-                             <img src="./images/AAA.png" alt="" width="70px" class="ms-6" style="border-radius: 70px;">
+                            <div class="flex gap-8">
+                                <img src="./images/AAA.png" alt="" width="70px" class="ms-6"
+                                    style="border-radius: 70px;">
 
-                            <h2 class="text-2xl font-bold">Jokotoye Stephen</h2>
-                        </div>
+                                <h2 class="text-2xl font-bold">Jokotoye Stephen</h2>
+                            </div>
                             <h2 class="text-5xl font-bold mt-8">Get Ready To Create <br> Great</h2>
                         </div>
                         <p class="mb-6">Providing exceptional healthcare services with compassion and advanced medical
@@ -687,39 +692,42 @@
                 </div>
         </footer>
 
-
-
-        <script>
-            const skillsSection = document.getElementById('skills');
-
-            function fillBars() {
-                const bars = document.querySelectorAll('.skill-bar');
-                bars.forEach(bar => {
-                    const skillLevel = bar.getAttribute('data-skill');
-                    bar.style.width = skillLevel + '%';
-                });
-            }
-
-            // Detect when the user scrolls to the skills section 
-            const observer = new IntersectionObserver(entries => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        fillBars();
-                        observer.disconnect(); // Stop observing after filling
-                    }
-                });
-            });
-
-            observer.observe(skillsSection);
-        </script>
-
-
-
-        <script>
-            // Set current year in the footer
-            document.getElementById('year').textContent = new Date().getFullYear();
-        </script>
     </section>
+
+
+    <script>
+        const skillsSection = document.getElementById('skills');
+
+        function fillBars() {
+            const bars = document.querySelectorAll('.skill-bar');
+            bars.forEach(bar => {
+                const skillLevel = bar.getAttribute('data-skill');
+                bar.style.width = skillLevel + '%';
+            });
+        }
+
+        // Detect when the user scrolls to the skills section 
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    fillBars();
+                    observer.disconnect(); // Stop observing after filling
+                }
+            });
+        });
+
+        observer.observe(skillsSection);
+
+
+
+    </script>
+
+
+
+    <script>
+        // Set current year in the footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
     <script src="./sript.js"></script>
 </body>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

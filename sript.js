@@ -7,6 +7,51 @@
   }
 });
 
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const counters = document.querySelectorAll(".counter");
+    let started = false; // make sure it only runs once
+
+    function animateCounters() {
+      if (started) return;
+
+      const statsSection = document.querySelector("#stats");
+      if (!statsSection) return;
+
+      const sectionTop = statsSection.getBoundingClientRect().top;
+      const triggerPoint = window.innerHeight * 0.8;
+
+      if (sectionTop < triggerPoint) {
+        started = true;
+
+        counters.forEach(counter => {
+          const target = +counter.getAttribute("data-target");
+          const duration = 1500; // animation time in ms
+          const startTime = performance.now();
+
+          function update(now) {
+            const elapsed = now - startTime;
+            const progress = Math.min(elapsed / duration, 1);
+            const current = Math.floor(progress * target);
+            counter.textContent = current;
+
+            if (progress < 1) {
+              requestAnimationFrame(update);
+            } else {
+              counter.textContent = target; // ensure final value
+            }
+          }
+
+          requestAnimationFrame(update);
+        });
+      }
+    }
+
+    // Run when scrolling and also once on load
+    window.addEventListener("scroll", animateCounters);
+    animateCounters();
+  });
+
 const menuToggle = document.getElementById('menu-toggle');
     const mobileMenu = document.getElementById('mobile-menu');
     const hamburgerIcon = menuToggle.querySelector('.hamburger');
@@ -60,7 +105,49 @@ function darkMood() {
   }
 });
 
+  // document.addEventListener("DOMContentLoaded", () => {
+  //   const counters = document.querySelectorAll(".counter");
+  //   let started = false; // make sure it only runs once
 
+  //   function animateCounters() {
+  //     if (started) return;
+
+  //     const statsSection = document.querySelector("#stats");
+  //     if (!statsSection) return;
+
+  //     const sectionTop = statsSection.getBoundingClientRect().top;
+  //     const triggerPoint = window.innerHeight * 0.8;
+
+  //     if (sectionTop < triggerPoint) {
+  //       started = true;
+
+  //       counters.forEach(counter => {
+  //         const target = +counter.getAttribute("data-target");
+  //         const duration = 1500; // animation time in ms
+  //         const startTime = performance.now();
+
+  //         function update(now) {
+  //           const elapsed = now - startTime;
+  //           const progress = Math.min(elapsed / duration, 1);
+  //           const current = Math.floor(progress * target);
+  //           counter.textContent = current;
+
+  //           if (progress < 1) {
+  //             requestAnimationFrame(update);
+  //           } else {
+  //             counter.textContent = target; // ensure final value
+  //           }
+  //         }
+
+  //         requestAnimationFrame(update);
+  //       });
+  //     }
+  //   }
+
+  //   // Run when scrolling and also once on load
+  //   window.addEventListener("scroll", animateCounters);
+  //   animateCounters();
+  // });
             // const skillsSection = document.getElementById('skills');
 
             // function fillBars() {
