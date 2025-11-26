@@ -50,7 +50,7 @@
     <img src="./images/img.png" alt="" width="20px" height="20px" id="light" onclick="darkMood()">
 
 
-    <section class="lg:flex gap-30 pt-24" class="hero">
+    <section class="lg:flex gap-30 pt-24" class="hero" id="#home">
         <div class="ps-24 pt-20">
             <p class="text-lg welcome">WELCOME TO MY WORLD</p>
             <h1 class="text-6xl">HI, I'm <SPan style="color: #ff9602;font-weight: 500;">Stephen Jokotoye</SPan> a <span
@@ -69,7 +69,7 @@
             <div class="flex justify-between">
                 <div class="icon_1">
                     <h3 class="mt-10 mb-2">Find Me on</h3>
-                    <a href=""> <i class='bx bxl-github'></i></a>
+                    <a href="https://github.com/JokotoyeStephen"> <i class='bx bxl-github'></i></a>
                     <a href=""> <i class='bx bxl-linkedin-square'></i></a>
                     <a href=""><i class='bx bxl-whatsapp-square'></i> </a>
                 </div>
@@ -106,47 +106,49 @@
                     <!-- Contact Info -->
                     <div class="space-y-6 mood">
                         <div class="flex gap-4">
-                            <div class="text-orange-500 text-2xl"><i class="bx bxs-phone"></i></div>
-                            <p class="text-xl">+234 8144108854</p>
+                            <a href=""><i class="bx bxs-phone text-2xl"></i></a>
+                            <p class="text-lg">+234 8144108854</p>
                         </div>
                         <div class="flex gap-6">
-                            <div class="text-orange-500 text-2xl"><i class="bx bxl-gmail"></i></div>
-                            <p class="text-xl">jokotoyestephen2023@gmail.com</p>
+                            <a href=""><i class="bx bxl-gmail text-2xl"></i></a>
+                            <p class="text-lg">jokotoyestephen2023@gmail.com</p>
                         </div>
-                        <div>
-                            <i class='bx bxl-github'></i>
-
+                        <div class="flex gap-8">
+                            <a href="https://github.com/JokotoyeStephen"><i class='bx bxl-github text-2xl'></i></a>
+                            <p class="text-lg">JokotoyeStephen </p>
                         </div>
-                        <div>
-                            <i class='bx bxl-linkedin-square'></i>
+                        <div class="flex gap-8">
+                            <a href=""><i class='bx bxl-linkedin-square text-2xl'></i></a>
+                            <p class="text-lg">Jokotoye Stephen</p>
                         </div>
-                        <div>
-                        <i class='bx bxl-whatsapp-square'></i>
-                    </div>
-                </div>
-                <div class="cool">
-                    <div class="flex pt-6 justify-between gap-2">
-                        <div class="mood">
-                            <h3 style="color: #ff9602; font-family: 'Fredoka', sans-serif;" class="text-5xl">10+
-                            </h3>
-                            <p>Project Completed</p>
-                        </div>
-                        <div class="mood">
-                            <h3 style="color: #ff9602;font-family: 'Fredoka', sans-serif;" class="text-5xl">20+</h3>
-                            <p>Industry Covered</p>
-                        </div>
-                        <div class="mood">
-                            <h3 style="color: #ff9602; font-family: 'Fredoka', sans-serif;" class="text-5xl">2+</h3>
-                            <p>Years of Experience</p>
+                        <div class="flex gap-8">
+                            <a href=""><i class='bx bxl-whatsapp-square text-2xl'></i></a>
+                            <p class="text-lg">Jokotoye Stephen</p>
                         </div>
                     </div>
-                    <div class="flex gap-4 mt-4">
-                        <button class="btn1 mt-2"><a href="">Download Resume</a></button>
-                        <button class="btn1 mt-2"><a href="">Contact Me</a></button>
+                    <div class="cool">
+                        <div class="flex pt-6 justify-between gap-2">
+                            <div class="mood">
+                                <h3 style="color: #ff9602; font-family: 'Fredoka', sans-serif;" class="text-5xl">10+
+                                </h3>
+                                <p class="mt-6">Project Completed</p>
+                            </div>
+                            <div class="mood">
+                                <h3 style="color: #ff9602;font-family: 'Fredoka', sans-serif;" class="text-5xl">20+</h3>
+                                <p class="mt-6">Industry Covered</p>
+                            </div>
+                            <div class="mood">
+                                <h3 style="color: #ff9602; font-family: 'Fredoka', sans-serif;" class="text-5xl">2+</h3>
+                                <p class="mt-6">Years of Experience</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 mt-4">
+                            <button class="btn1 mt-2"><a href="">Download Resume</a></button>
+                            <button class="btn1 mt-2"><a href="">Contact Me</a></button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
         </div>
         </div>
     </section>
@@ -226,87 +228,172 @@
 
     <section class="mt-24 ps-24 pe-24">
         <div class="container mx-auto">
-            <h1 class="text-3xl font-bold mb-5">e Tech Stack</h1>
-            <div class="grid grid-cols-3 gap-10" id="skills">
+            <p class="text-xl">MY SKILLS</p>
+            <h2 class="text-5xl font-bold mb-5" style="font-family: fredoka;">e Tech Stack</h2>
+            <div class="grid grid-cols-4 gap-4" id="skills">
                 <div>
-                <p style="color: #ff9602;">My Skills</p>
-                <h2 class="text-3xl mt-2 mb-4">How can I assist with the upcoming project?</h2>
-                <p class="mb-4">Certainly, I can help you create a description for your next project. However, I'll need more specific information about the project itself. Please provide details such as the project's purpose, goals, scope, and any relevant information, and I'll assist you in crafting a suitable project description.</p>
-                 <button class="btn1 mt-2"><a href="">Download Resume</a></button>
+                    <p style="color: #ff9602;">My Skills</p>
+                    <h2 class="text-3xl mt-2 mb-4">How can I assist with the upcoming project?</h2>
+                    <p class="mb-4 text-justify">Certainly, I can help you create a description for your next project.
+                        However, I'll
+                        need more specific information about the project itself. Please provide details such as the
+                        project's purpose, goals, scope, and any relevant information, and I'll assist you in crafting a
+                        suitable project description.</p>
+                    <button class="btn1 mt-2"><a href="">Download Resume</a></button>
                 </div>
-                <div>
+                <div class="cool">
                     <h2 class="text-xl font-semibold">Frontend</h2>
                     <div class="mt-4">
                         <div class="mb-2 flex justify-between">
-                            <h3>HTML & Css</h3>
+                            <h3>HTML & Css
+                                <i class='bx bxl-html5'></i>
+                                <i class='bx bxl-css3'></i>
+                            </h3>
                             <p class="me-16">96%</p>
                         </div>
                         <div class="skill-bar w-0" data-skill="96"></div>
                     </div>
                     <div class="mt-4">
                         <div class="mb-2 flex justify-between">
-                            <h3>React</h3>
+                            <h3>React
+                                <i class='bx bxl-react'></i>
+                            </h3>
                             <p class="me-16">42%</p>
                         </div>
                         <div class="skill-bar w-0" data-skill="42"></div>
                     </div>
                     <div class="mt-4">
                         <div class="mb-2 flex justify-between">
-                            <h3>JavaScript</h3>
+                            <h3>JavaScript
+                                <i class='bx bxl-javascript'></i>
+                            </h3>
                             <p class="me-16">75%</p>
                         </div>
                         <div class="skill-bar w-0" data-skill="75"></div>
                     </div>
                     <div class="mt-4">
                         <div class="mb-2 flex justify-between">
-                            <h3>Thailwind / Bootstrap</h3>
+                            <h3>Bootstrap
+                                <i class='bi bi-bootstrap-fill'></i>
+                            </h3>
                             <p class="me-16">83%</p>
                         </div>
                         <div class="skill-bar w-0" data-skill="83"></div>
                     </div>
-                </div>
-                
-                <div>
-                    <h2 class="text-xl font-semibold">Backend</h2>
                     <div class="mt-4">
-                   
-                    <i class='bx bxl-firebase'></i>
                         <div class="mb-2 flex justify-between">
-                            <h>Node.js 
-                                 <i class='bx bxl-nodejs'></i> </h>
-                         
+                            <h3>Thailwind
+                                <i class='bx bxl-tailwind-css'></i>
                             </h3>
                             <p class="me-16">75%</p>
                         </div>
-                        <div class="skill-bar w-0" data-skill="60"></div>
+                        <div class="skill-bar w-0" data-skill="75"></div>
                     </div>
+                </div>
+
+                <div class="cool">
+                    <h2 class="text-xl font-semibold">Backend</h2>
                     <div class="mt-4">
+
                         <div class="mb-2 flex justify-between">
-                            <h3>Python</h3>
-                            <p class="me-16">50%</p>
-                        </div>
-                        <div class="skill-bar w-0" data-skill="40"></div>
-                    </div>
-                    <div class="mt-4">
-                        <div class="mb-2 flex justify-between">
-                            <h3>React
-                                 <i class='bx bxl-react'></i> 
+                            <h3>Node.js
+                                <i class='bx bxl-nodejs'></i>
                             </h3>
-                            <p class="me-16">35%</p>
+                            <p class="me-16">75%</p>
                         </div>
-                        <div class="skill-bar w-0" data-skill="15"></div>
+                        <div class="skill-bar w-0" data-skill="75"></div>
                     </div>
                     <div class="mt-4">
                         <div class="mb-2 flex justify-between">
-                            <h3>Next.js</h3>
+                            <h3>Next.js
+                                <i class='bx bxl-nodejs'></i>
+                            </h3>
                             <p class="me-16">30%</p>
                         </div>
                         <div class="skill-bar w-0" data-skill="30"></div>
                     </div>
+                    <div class="mt-4">
+                        <div class="mb-2 flex justify-between">
+                            <h3>Python
+                                <i class='bx bxl-python'></i>
+                            </h3>
+                            <p class="me-16">50%</p>
+                        </div>
+                        <div class="skill-bar w-0" data-skill="50"></div>
+                    </div>
+                    <div class="mt-4">
+                        <div class="mb-2 flex justify-between">
+                            <h3>React
+                                <i class='bx bxl-react'></i>
+                            </h3>
+                            <p class="me-16">45%</p>
+                        </div>
+                        <div class="skill-bar w-0" data-skill="45"></div>
+                    </div>
+
+                    <div class="mt-4">
+                        <div class="mb-2 flex justify-between">
+                            <h3>Firebase
+                                <i class='bx bxl-firebase'></i>
+                            </h3>
+                            <p class="me-16">35%</p>
+                        </div>
+                        <div class="skill-bar w-0" data-skill="35"></div>
+                    </div>
+                </div>
+
+
+                <div class="cool">
+                    <h2 class="text-xl font-semibold">Graphics</h2>
+                    <div class="mt-4">
+                        <div class="mb-2 flex justify-between">
+                            <h3>Photoshop
+                                <i class='bx bxl-html5'></i>
+                            </h3>
+                            <p class="me-16">80%</p>
+                        </div>
+                        <div class="skill-bar w-0" data-skill="80"></div>
+                    </div>
+                    <div class="mt-4">
+                        <div class="mb-2 flex justify-between">
+                            <h3>Illustratetor
+                                <i class='bx bxl-react'></i>
+                            </h3>
+                            <p class="me-16">62%</p>
+                        </div>
+                        <div class="skill-bar w-0" data-skill="62"></div>
+                    </div>
+                    <div class="mt-4">
+                        <div class="mb-2 flex justify-between">
+                            <h3>Corel Draw
+                                <i class='bx bxl-javascript'></i>
+                            </h3>
+                            <p class="me-16">55%</p>
+                        </div>
+                        <div class="skill-bar w-0" data-skill="55"></div>
+                    </div>
+                    <div class="mt-4">
+                        <div class="mb-2 flex justify-between">
+                            <h3>Figma
+                                <i class='bi bi-bootstrap-fill'></i>
+                            </h3>
+                            <p class="me-16">66%</p>
+                        </div>
+                        <div class="skill-bar w-0" data-skill="66"></div>
+                    </div>
+                    <div class="mt-4">
+                        <div class="mb-2 flex justify-between">
+                            <h3>Thailwind
+                                <i class='bx bxl-tailwind-css'></i>
+                            </h3>
+                            <p class="me-16">75%</p>
+                        </div>
+                        <div class="skill-bar w-0" data-skill="75"></div>
+                    </div>
                 </div>
             </div>
-                
-            </section>
+
+    </section>
 
 
 
@@ -314,7 +401,7 @@
         <p class="text-xl text-center">--- Projects & Work </p>
         <h2 class="text-5xl mt-2 text-center">Individual <span style="color: #ff9602;">Projects</span> <br> &
             collaborations <span style="color: #ff9602;">Projects</span></h2>
-        <div class="flex ps-24 gap-10 pe-24 mt-4 pt-6 " id="cardo">
+        <div class="ps-24 gap-10 pe-24 mt-4 pt-6 " id="cardo">
             <div class="card pe-10">
                 <img src="" alt="">
                 <div class="lists">
@@ -327,7 +414,7 @@
                     <p class="para">Software Engineering</p>
                 </div>
             </div>
-            <div class="card">
+            <div class="card mt-4">
                 <img src="" alt="">
                 <div class="lists">
                     <h2>Mutil-Language Translator</h2>
@@ -339,7 +426,7 @@
                     <p class="para">Software Engineering</p>
                 </div>
             </div>
-            <div class="card">
+            <div class="card mt-4">
                 <img src="" alt="">
                 <div class="lists">
                     <h4>Ladoke Akintola University of Technology</h4>
@@ -356,41 +443,50 @@
         </div>
     </section>
 
-    <section class="ps-24 pt-32 ">
-        <p class="text-xl text-center">--- Contact Me</p>
+    <section class="ps-24 mt-32 cool">
+        <p class="text-xl pt-8 text-center">--- Contact Me</p>
         <h2 class="text-4xl mb-2 text-center">Let talk for <span style="color: #ff9602;">Your next Project</span></h2>
         <p class="text-xl text-center">Have a project in mind or just want to say hi?</p>
-       
+
         <div class="flex flex-col md:flex-row gap-8 pt-12">
 
             <!-- Contact Info -->
-            <div class="w-full md:w-1/3 space-y-6 cool">
+            <div class="w-full md:w-1/3 space-y-6 mood">
                 <p class="text-xl"><span style="color: #ff9602;">GET IN TOUCH</span></p>
                 <h2 class="text-xl">Elevate your brand with Me</h2>
                 <div class="flex gap-6 rand1">
                     <p>Have a project in mind, a question, or just want to say hello? Feel free to reach out!I’m always
                         open to discussing.</p>
-                    <i class="bx bxs-phone"></i>
-                    <p class="text-xl">+234 (081) 8144108854</p>
                 </div>
-                <div class="flex gap-6 rand1">
-                    <i class="bx bxl-gmail"></i>
-                    <p class="text-xl">jokotoyestephen2023@gmail.com</p>
-                </div>
-                <div class="flex gap-6 rand1">
-                    <i class="bx bx-current-location"></i>
-                    <p class="text-xl">Ogbomos, Oyo State.</p>
-                </div>
+                <div class="cool text-left">
+                    <div class="flex">
+                        <div class="flex bg-orange-600 gap-4">
+                            <a href=""><i class="bx bxs-phone text-2xl"></i></a>
+                            <p class="text-lg">+234 8144108854</p>
+                        </div>
+                        <div class="flex">
+                            <a href="https://github.com/JokotoyeStephen"><i class='bx bxl-github text-2xl'></i></a>
+                            <p class="text-lg">JokotoyeStephen </p>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <a href=""><i class="bx bxl-gmail text-2xl"></i></a>
+                        <p class="text-lg">jokotoyestephen2023@gmail.com</p>
+                    </div>
 
-
-                <div>
-                    <h2 class="pt-6 text-2xl">Some of my Social Media handles</h2>
-                    <p></p>
+                    <div class="flex">
+                        <a href=""><i class='bx bxl-linkedin-square text-2xl'></i></a>
+                        <p class="text-lg">Jokotoye Stephen</p>
+                    </div>
+                    <div class="flex">
+                        <a href=""><i class='bx bxl-whatsapp-square text-2xl'></i></a>
+                        <p class="text-lg">Jokotoye Stephen</p>
+                    </div>
                 </div>
-
             </div>
+
             <!-- Contact Form -->
-            <form action="/contact" method="POST" class="w-full md:w-2/3 me-24 cool">
+            <form action="/contact" method="POST" class="w-full md:w-2/3 me-24 mood">
 
                 <div class="flex justify-between gap-6">
                     <!-- Name -->
@@ -485,14 +581,18 @@
 
     <section>
 
-        <footer class="mt-16 pt-10 pb-8 cool">
+        <footer class="mt-16 pt-10 pb-8 mood">
             <div class="container mx-auto px-4">
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12 mt-8">
                     <!-- Column 1 -->
                     <div>
                         <div class="items-center mb-6">
+                          <div class="flex gap-8"> 
+                             <img src="./images/AAA.png" alt="" width="70px" class="ms-6" style="border-radius: 70px;">
+
                             <h2 class="text-2xl font-bold">Jokotoye Stephen</h2>
-                            <h2 class="text-2xl font-bold">Get Ready To Create <br> Great</h2>
+                        </div>
+                            <h2 class="text-5xl font-bold mt-8">Get Ready To Create <br> Great</h2>
                         </div>
                         <p class="mb-6">Providing exceptional healthcare services with compassion and advanced medical
                             technology since 1995.</p>
@@ -503,63 +603,88 @@
                     <div>
                         <h3 class="text-xl font-bold mb-6 pb-2 border-b border-orange-500">Quick Links</h3>
                         <ul class="space-y-3">
-                            <li><a href="#" class="flex items-center"><i
-                                        class="fas fa-chevron-right text-xs mr-2 text-secondary"></i> Home</a></li>
-                            <li><a href="#" class="flex items-center"><i
-                                        class="fas fa-chevron-right text-xs mr-2 text-secondary"></i> About Us</a></li>
-                            <li><a href="#" class="flex items-center"><i
-                                        class="fas fa-chevron-right text-xs mr-2 text-secondary"></i> Services</a></li>
-                            <li><a href="#" class="flex items-center"><i
-                                        class="fas fa-chevron-right text-xs mr-2 text-secondary"></i> E tech stack</a>
+                            <div>
+                                <li><a href="#home" class="flex items-center"><i
+                                            class="fas fa-chevron-right text-xs mr-2 text-secondary"></i> Home</a></li>
+                            </div>
+                            <div>
+                                <li><a href="#" class="flex items-center"><i
+                                            class="fas fa-chevron-right text-xs mr-2 text-secondary"></i> About Us</a>
+                                </li>
+                            </div>
+                            <div>
+                                <li><a href="#" class="flex items-center"><i
+                                            class="fas fa-chevron-right text-xs mr-2 text-secondary"></i> Services</a>
+                                </li>
+                            </div>
+                            <div>
+                                <li><a href="#" class="flex items-center"><i
+                                            class="fas fa-chevron-right text-xs mr-2 text-secondary"></i> E tech
+                                        stack</a>
+                            </div>
                             </li>
-                            <li><a href="#" class="flex items-center"><i
-                                        class="fas fa-chevron-right text-xs mr-2 text-secondary"></i> Testimonial</a>
+                            <div>
+                                <li><a href="#" class="flex items-center"><i
+                                            class="fas fa-chevron-right text-xs mr-2 text-secondary"></i>
+                                        Testimonial</a>
+                            </div>
                             </li>
-                            <li><a href="#" class="flex items-center"><i
-                                        class="fas fa-chevron-right text-xs mr-2 text-secondary"></i> Contact</a></li>
+                            <div>
+                                <li><a href="#" class="flex items-center"><i
+                                            class="fas fa-chevron-right text-xs mr-2 text-secondary"></i> Contact</a>
+                                </li>
+                            </div>
                         </ul>
                     </div>
 
                     <!-- Column 4 -->
                     <div>
                         <h3 class="text-xl font-bold mb-6 pb-2 border-b border-orange-500">Contact Us</h3>
-                        <ul class="space-y-4">
-                            <li class="flex items-start">
-                                <i class="fas fa-map-marker-alt text-orange-500 m t-1 mr-3"></i>
-                                <span>123 Medicwhite, Health City, HC 12345</span>
-                            </li>
-                            <li class="flex items-center">
-                                <i class="fas fa-phone-alt text-orange-500 mr-3"></i>
-                                <span>+234 81 441 08 854</span>
-                            </li>
-                            <li class="flex items-center">
-                                <i class="fas fa-envelope text-orange-500 mr-3"></i>
-                                <span class="text-white">jokotoyestephen2023@gmail.com</span>
-                            </li>
-                        </ul>
+                        <div class="space-y-6">
+                            <div class="flex gap-4">
+                                <a href=""><i class="bx bxs-phone text-2xl"></i></a>
+                                <p class="text-lg">+234 8144108854</p>
+                            </div>
+                            <div class="flex gap-6">
+                                <a href=""><i class="bx bxl-gmail text-2xl"></i></a>
+                                <p class="text-lg">jokotoyestephen2023@gmail.com</p>
+                            </div>
+                            <div class="flex gap-8">
+                                <a href="https://github.com/JokotoyeStephen"><i class='bx bxl-github text-2xl'></i></a>
+                                <p class="text-lg">JokotoyeStephen </p>
+                            </div>
+                            <div class="flex gap-8">
+                                <a href=""><i class='bx bxl-linkedin-square text-2xl'></i></a>
+                                <p class="text-lg">Jokotoye Stephen</p>
+                            </div>
+                            <div class="flex gap-8">
+                                <a href=""><i class='bx bxl-whatsapp-square text-2xl'></i></a>
+                                <p class="text-lg">Jokotoye Stephen</p>
+                            </div>
 
-                        <div class="flex space-x-4">
-                            <a href="#"
-                                class="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center hover:bg-primary">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                            <a href="#"
-                                class="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center hover:bg-blue-400">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                            <a href="#"
-                                class="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center hover:bg-purple-600">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                            <a href="#"
-                                class="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center hover:bg-red-600">
-                                <i class="fab fa-youtube"></i>
-                            </a>
+
+                            <div class="flex space-x-4">
+                                <a href="#"
+                                    class="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center hover:bg-primary">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#"
+                                    class="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center hover:bg-blue-400">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#"
+                                    class="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center hover:bg-purple-600">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#"
+                                    class="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center hover:bg-red-600">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-            </div>
+                </div>
         </footer>
 
 
