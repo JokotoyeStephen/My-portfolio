@@ -6,6 +6,30 @@
     navbar.classList.remove("scrolled");
   }
 });
+// sweet alert 
+// notie.alert({ 
+//   type: 'success', 
+//   text: 'Operation successful!', 
+//   time: 3 
+// });
+// notie.confirm({
+//   text: 'Are you sure?',
+//   submitText: 'Yes',
+//   cancelText: 'Cancel',
+//   submitCallback: function () {
+//     console.log('Confirmed!');
+//   }
+// });
+// end of sweet alert
+ console.log("hello");
+
+ fetch("http://localhost:5000/contact")
+ 
+  .then(response => response.json())
+  .then(data => {
+    console.log(data);
+  })
+  .catch(error => console.error(error));
 
 
   document.addEventListener("DOMContentLoaded", () => {

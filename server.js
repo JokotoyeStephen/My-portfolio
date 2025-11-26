@@ -49,15 +49,19 @@ app.post("/contact", async (req , res) => {
     from: email,  // sender address
     to: process.env.EMAIL_USER,  //list of recievers
     subject : `New Contact Message FROM ${name}`,
-    phone: phone,
-    service:service,
-    country:country,
-    text: message, //plain text body
+    text:`name:${name},
+    email:${email},
+    phone:${phone},
+    service:${service},
+    country:${country},
+    message:${message}`, //plain text body
     };
 
 try {
   await transporter.sendMail(mailOptions);
-  res.send("THANK YOU");
+  // res.json(
+  //   message:"success";
+  // );
 }
 catch (err) {
   console.log("send error:",err.message);
