@@ -60,7 +60,10 @@
         </div>
     </section>
     
-    <p class="mt-16" id="dark"><i class='bx bx-moon bx-md'  onclick="darkMood()"></i> </p>
+   <p>
+  <i id="dark" class="bx bx-moon bx-md cursor-pointer" onclick="darkMood()"></i>
+</p>
+
 
     <section class="lg:flex gap-30 pt-32" class="hero" id="home" class="hero lg:flex gap-12 pt-28" data-aos="fade-up"
         data-aos-delay="200" data-aos-duration="800">
@@ -171,8 +174,10 @@
         </div>
     </section>
 
-
-
+<i
+  id="goTop"
+  class="bx bx-up-arrow-alt bx-md cursor-pointer fixed bottom-6 right-6 hidden z-50"
+></i>
     <section class="mt-24 lg:ps-24 lg:pe-24" id="service" data-aos="fade-right" data-aos-delay="50">
         <p class="features  text-xl ">FEATURES</p>
         <h2 class="text-5xl">WHAT I DO</h2>
@@ -447,7 +452,7 @@
             <div class="card pe-10 lg:flex gap-10 mt-4 sm:mx-2" data-aos="fade-right" data-aos-delay="200">
                 <img src="./images/rrr.PNG" alt="" width="500px">
 
-                <div class="mt-4">
+                <div class="mt-4 mx-2">
                     <a href="https://hotel-website-1-eron.onrender.com/index.html">
                         <h2 class="lists  text-3xl">Hotel Management & Booking System</h2>
                     </a>
@@ -472,7 +477,7 @@
                 <img src="./images/Capture.PNG" alt="" width="500px">
                 <!-- <img src="./images/rrr.PNG" alt="" width="500px"> -->
 
-                <div>
+                <div class="mx-2">
 
                     <a href="https://mutil-language-translator.onrender.com">
                         <h2 class="lists text-4xl mt-4">Multi-language Translator</h2>
@@ -494,14 +499,14 @@
             </div>
             <div class="card pe-10 lg:flex gap-10 mt-4" data-aos="fade-right" data-aos-delay="200">
                 <img src="./images/to do app.PNG" alt="" width="500px">
-                <div>
-                    <h2 class="lists  text-3xl">To_do web app</h2>
+                <div class="mx-2">
+                    <h2 class="lists text-3xl">To_do web app</h2>
 
-                    <p class="pt-6">A simple and efficient to-do list app designed to help users organize tasks, set
+                    <p class="pt-6 text-justify">A simple and efficient to-do list app designed to help users organize tasks, set
                         priorities, and track daily activities. It allows users to add, edit, and delete tasks, mark
                         tasks as completed, and stay focused on what matters most. The clean interface ensures ease of
                         use while helping users boost productivity and manage time effectively.</p>
-                    <div class="lg:flex gap-8 pt-6">
+                    <div class="flex gap-8 pt-6">
                         <p>React</p>
                         <p>Bootstrap CSS</p>
                         <p>JavaScript (ES6+)</p>

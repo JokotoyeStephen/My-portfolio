@@ -1,13 +1,37 @@
-function darkMood() {
-    const light = document.querySelector("#light");
-    const btn = document.querySelector("#btn");
-    const bodys = document.querySelector("#bodys")
-    console.log(bodys);
-    bodys.classList.toggle("money")
-    btn.style.backgroundColor = "white"
+function darkMood(){
+  const body = document.getElementById("bodys");
+  const icon = document.getElementById("dark");
 
-}
+  // Toggle dark mode
+  body.classList.toggle("money");
+
+  // If dark mode is ON → show moon
+  if (body.classList.contains("money")) {
+    icon.classList.remove("bx-moon");
+    icon.classList.add("bx-sun");
+  } 
+  // If dark mode is OFF → show sun
+  else {
+    icon.classList.remove("bx-sun");
+    icon.classList.add("bx-moon");
+}}
   
+const goTop = document.getElementById("goTop");
+
+goTop.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+});
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 300) {
+    goTop.classList.remove("hidden");
+  } else {
+    goTop.classList.add("hidden");
+  }
+});
+
   AOS.init({
     duration: 800,
     easing: 'ease-in-out',
