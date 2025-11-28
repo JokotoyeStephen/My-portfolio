@@ -24,7 +24,7 @@
     <link rel="shortcut icon" href="./images/AAA.png" type="image/x-icon">
 </head>
 
-<body id="bodys">
+<body id="bodys" class="overflow-x-hidden">
 
     <section id="navbar" class="flex justify-between items-center shadow fixed w-full navbar pb-2">
         <img src="./images/AAA.png" alt="Logo" class="w-16 h-16 rounded-full">
@@ -33,38 +33,36 @@
             <p class="hover:text-orange-400"><a href="#about">About Us</a></p>
             <p class="hover:text-orange-400"><a href="#service">Our Services</a></p>
             <p class="hover:text-orange-400"> <a href="">Projects</a></p>
-            <p class="hover:text-orange-400"><a href="#contact" class="" id="btn">Contact Me</a></p>
+            <p class="hover:text-orange-400"><a href="#contact" class="" id="">Contact Me</a></p>
         </nav>
-        <button class="md:hidden mr-4 focus:outline-none" id="menu-toggle" aria-label="Toggle menu">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-        </button>
+        
         <div class="flex justify-between">
             <div class="icon_2 pt-4 flex gap-10 me-24   md:hidden sm:hidden lg:block">
                 <a href="https://github.com/JokotoyeStephen"> <i class='bx bxl-github text-4xl px-2'></i></a>
                 <a href=""> <i class='bx bxl-linkedin-square text-4xl px-2'></i></a>
                 <a href=""><i class='bx bxl-whatsapp-square  text-4xl px-2'></i> </a>
             </div>
+            <button class="md:hidden mr-4 focus:outline-none" id="menu-toggle" aria-label="Toggle menu">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </button>
             <div class="hidden absolute top-16 left-0 w-full shadow-md md:hidden" id="mobile-menu">
                 <nav class="flex flex-col items-center gap-4 py-4 text-lg">
                     <a href="#">Home</a>
                     <a href="#about">About Us</a>
                     <a href="#service">Our Services</a>
                     <a href="">Projects</a>
-                    <a href="#contact" class="btn" id="btn">Contact Us</a>
+                    <a href="#contact" class="btn" id="">Contact Us</a>
 
                 </nav>
             </div>
         </div>
     </section>
+    
+    <p class="mt-16" id="dark"><i class='bx bx-moon bx-md'  onclick="darkMood()"></i> </p>
 
-
-
-    <img src="./images/img.png" alt="" width="20px" height="20px" id="light" class="mt-16" onclick="darkMood()">
-
-
-    <section class="lg:flex gap-30 pt-28" class="hero" id="home" class="hero lg:flex gap-12 pt-28" data-aos="fade-up"
+    <section class="lg:flex gap-30 pt-32" class="hero" id="home" class="hero lg:flex gap-12 pt-28" data-aos="fade-up"
         data-aos-delay="200" data-aos-duration="800">
         <div class="lg:ps-24 lg:pt-20 sm:ps-8 sm:pe-8 sm:pt-20 mx-2" data-aos="fade-up" data-aos-delay="100">
             <div class="lg:hidden mb-10" data-aos="fade-right" data-aos-duration="1000">
@@ -102,12 +100,12 @@
                 </div>
             </div>
         </div>
-        <div class="pe-10 sm:hidden md:hidden lg:block" data-aos="fade-left" data-aos-delay="400"><img
+        <div class="pe-10 sm:hidden hidden lg:block" data-aos="fade-left" data-aos-delay="400"><img
                 src="./images/ef13771bd3956c84ed21a57c10cf05ee-removebg-preview (2).png" alt="" width="2000px">
         </div>
     </section>
 
-    <section class="mt-24 lg:pe-24 lg:ps-24 lg:p-10 card1 rounded-2xl" id="about" data-aos="fade-left">
+    <section class="mt-24 lg:pe-24 lg:ps-24 lg:p-10 card1 rounded-2xl overflow-x-hidden" id="about" data-aos="fade-down" data-aos-delay="50">
         <div class="lg:flex gap-12">
             <div>
                 <img src="./images/about-us-img.png" alt="" width="1200px">
@@ -123,7 +121,7 @@
                     turning ideas into reality using modern technologies like HTML, CSS, JavaScript, Tailwind, Node.js,
                     and MongoDB.</p>
 
-                <div class="lg:flex gap-4 mt-4" data-aos="fade-left" data-aos-delay="200">
+                <div class="lg:flex gap-4 mt-4" data-aos="fade-down" data-aos-delay="200">
                     <!-- Contact Info -->
                     <div class="space-y-4 mood">
                         <P style="color: #ff9602;font-family: 'Fredoka', sans-serif;"
@@ -175,11 +173,11 @@
 
 
 
-    <section class="mt-24 lg:ps-24 lg:pe-24" id="service">
+    <section class="mt-24 lg:ps-24 lg:pe-24" id="service" data-aos="fade-right" data-aos-delay="50">
         <p class="features  text-xl ">FEATURES</p>
         <h2 class="text-5xl">WHAT I DO</h2>
         <div class="whatido pt-4">
-            <div class="card gap-6 lg:flex p-6 mx-2" data-aos="fade-up" data-aos-delay="50">
+            <div class="card gap-6 lg:flex p-6 mx-2" data-aos="fade-down" data-aos-delay="50">
                 <p class="text-5xl"> <i class='bx bx-laptop'></i></p>
                 <div>
                     <h3>Web Development </h3>
@@ -190,7 +188,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="card gap-6 mx-2 mt-2 lg:flex p-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="card gap-6 mx-2 mt-2 lg:flex p-6" data-aos="fade-down" data-aos-delay="100">
                 <p class="text-5xl"><i class='bx bx-code-curly'></i></p>
                 <div>
                     <h3>Software Engineering</h3>
@@ -202,7 +200,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="card gap-6 mx-2 mt-2 lg:flex p-6" data-aos="fade-up" data-aos-delay="150">
+            <div class="card gap-6 mx-2 mt-2 lg:flex p-6" data-aos="fade-down" data-aos-delay="150">
                 <p class="text-5xl"><i class='bx bxl-wordpress'></i></p>
                 <div>
                     <h3> Wordpress Development</h3>
@@ -251,13 +249,13 @@
     </section>
 
 
-    <section class="mt-24 mx-2 lg:ps-24 lg:pe-24" data-aos="fade-up">
+    <section class="mt-24 mx-2 lg:ps-24 lg:pe-24" data-aos="fade-up" data-aos-delay="100">
         <div class="container mx-auto">
             <p class="text-xl lists">MY SKILLS</p>
             <h2 class="text-5xl font-bold mb-5" style="font-family: fredoka;">e Tech Stack</h2>
             <div class="lg:grid lg:grid-cols-2 lg:gap-8" id="skills">
                 <div class="sm:mt-4 md:mt-4">
-                    <p style="color: #ff9602;">My Skills</p>
+                    <p style="color: #ff9602;" data-aos="fade-left">My Skills</p>
                     <h2 class="text-3xl mt-2 mb-4">How can I assist with the upcoming project?</h2>
                     <p class="mb-4 text-justify">Certainly, I can help you create a description for your next project.
                         However, I'll
@@ -439,14 +437,14 @@
 
 
 
-    <section class="mt-24 lg:ps-" data-aos="fade-up">
+    <section class="mt-24 lg:ps-" data-aos="fade-up" data-aos-delay="100">
         <p class="text-xl text-center">--- Projects & Work </p>
         <h2 class="text-5xl mt-2 text-center">Individual <span style="color: #ff9602;">Projects</span> <br> &
             collaborations <span style="color: #ff9602;">Projects</span></h2>
         <div class="lg:ps-24 gap-10 lg:pe-24 mt-4 pt-6 " id="cardo">
 
 
-            <div class="card pe-10 lg:flex gap-10 mt-4 sm:mx-2" data-aos="fade-right">
+            <div class="card pe-10 lg:flex gap-10 mt-4 sm:mx-2" data-aos="fade-right" data-aos-delay="200">
                 <img src="./images/rrr.PNG" alt="" width="500px">
 
                 <div class="mt-4">
@@ -470,7 +468,7 @@
                 </div>
             </div>
 
-            <div class="card lg:flex gap-10 mt-4 sm:mx-2" data-aos="fade-left">
+            <div class="card lg:flex gap-10 mt-4 sm:mx-2" data-aos="fade-left" data-aos-delay="200">
                 <img src="./images/Capture.PNG" alt="" width="500px">
                 <!-- <img src="./images/rrr.PNG" alt="" width="500px"> -->
 
@@ -494,7 +492,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card pe-10 lg:flex gap-10 mt-4" data-aos="fade-right">
+            <div class="card pe-10 lg:flex gap-10 mt-4" data-aos="fade-right" data-aos-delay="200">
                 <img src="./images/to do app.PNG" alt="" width="500px">
                 <div>
                     <h2 class="lists  text-3xl">To_do web app</h2>
@@ -526,12 +524,13 @@
         </div>
     </section>
 
-    <section class="lg:ps-24 mt-32 pb-12 cooler" data-aos="fade-up">
+    <section class="lg:ps-24 mt-32 pb-12 cooler" data-aos="fade-up" data-aos-duration="200" data-aos-delay="200" >
         <p class="text-xl pt-8 text-center"> Contact Me</p>
         <h2 class="text-4xl mb-2 text-center">Let talk for <span style="color: #ff9602;">Your next Project</span></h2>
         <p class="text-xl text-center">Have a project in mind or just want to say hi?</p>
 
-        <div class="flex flex-col md:flex-row gap-8 pt-12">
+        <div class="flex flex-col md:flex-row gap-8 pt-12"  data-aos="flip-up"
+>
 
             <!-- Contact Info -->
             <div class="w-full md:w-1/3 space-y-6  px-8 py-8 cool">
@@ -557,7 +556,8 @@
                 </div>
             </div>
             <!-- Contact Form -->
-            <form action="/contact" method="POST" class="w-full md:w-2/3  space-y-6  px-8 py-8  me-24 cooler">
+            <form action="/contact" method="POST" class="w-full md:w-2/3  space-y-6  px-8 py-8  me-24 cooler"  data-aos="flip-down"
+>
 
                 <div class="flex justify-between gap-6 pt-6">
                     <!-- Name -->
@@ -651,7 +651,7 @@
 
     <section>
 
-        <footer class="mt-16 pt-10 pb-8 mood" data-aos="fade-in" data-aos-duration="800">
+        <footer class="mt-16 pt-10 pb-8 mood"  data-aos="flip-up">
             <div class="container mx-auto px-4">
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12 mt-8">
                     <!-- Column 1 -->
@@ -756,6 +756,12 @@
 
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script>
+          AOS.init({
+    duration: 800,
+    easing: 'ease-in-out',
+    once: true,
+  });
+
         const skillsSection = document.getElementById('skills');
 
         function fillBars() {

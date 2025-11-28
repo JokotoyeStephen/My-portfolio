@@ -16,14 +16,18 @@ body {
   background-color: #f5f5f5;
   border-color: #00008b;
 }
-.dark-btn {
+/* #mobile-menu {
+  transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+} */
+/* .dark-btn {
   background-color: white;
-}
+} */
 
 h1 {
   font-family: "Fredoka", sans-serif;
 }
-#light {
+#dark {
+  z-index: 99;
   position: fixed;
 }
 /* contact section */
@@ -196,10 +200,9 @@ option {
   gap: 20px;
 }
 @media (max-width: 768px) {
-  /* body{
-        padding-left: 10px;
-        padding-right: 10px;
-    } */
+  /* .toggle{
+    margin-left: 200px;
+  } */
   .whatido {
     display: block;
     margin-top: 20px;

@@ -1,4 +1,4 @@
-  function darkMood() {
+function darkMood() {
     const light = document.querySelector("#light");
     const btn = document.querySelector("#btn");
     const bodys = document.querySelector("#bodys")
