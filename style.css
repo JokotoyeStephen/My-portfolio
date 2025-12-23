@@ -48,6 +48,14 @@ h1 {
   font-weight: 600;
   transform: scale(1.05);
 }
+.icon {
+    display:none;
+    color: #ecbd47;
+    font-size: 30px;
+    padding-right: 00px;
+    cursor: pointer;
+}
+
 .btn1:hover {
   border: 2px solid #f69916;
   transition: 2;
@@ -202,6 +210,31 @@ option {
   gap: 20px;
 }
 @media (max-width: 768px) {
+     .icon {
+        display: block;
+        margin-right: 60px;
+    }
+     .wee{
+        display: none;
+        line-height: 4;
+        position: absolute;
+        background-color: #5f4934;
+        width: 250px;
+        right: 10px;
+        padding: 0;
+        top: 40px;
+    }
+    .wee a {
+        display: block;
+        font-size: 10px;
+        text-align: center;
+    }
+    .wee.active {
+        display: block;
+    }
+      .navbar_list.active {
+        display: block;
+    }
   /* .toggle{
     margin-left: 200px;
   } */
