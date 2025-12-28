@@ -38,29 +38,35 @@
             <div class="icon_2 pt-4 flex gap-10 me-24 md:hidden sm:hidden lg:block"> <a
                     href="https://github.com/JokotoyeStephen"> <i class='bx bxl-github text-4xl px-2'></i></a> <a
                     href=""> <i class='bx bxl-linkedin-square text-4xl px-2'></i></a> <a href=""><i
-                        class='bx bxl-whatsapp-square text-4xl px-2'></i> </a> </div> <button
-                class="md:hidden mr-4 focus:outline-none" id="menu-toggle" aria-label="Toggle menu"> <svg
-                    class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                </svg> </button>
-            <div class="hidden absolute top-16 left-0 w-full shadow-md md:hidden" id="mobile-menu">
-                <nav class="flex flex-col items-center gap-4 py-4 text-lg bg-white"> <a href="#">Home</a> <a href="#about">About
-                        Us</a> <a href="#service">Our Services</a> <a href="">Projects</a> <a href="#contact"
-                        class="btn" id="">Contact Us</a> </nav>
+                        class='bx bxl-whatsapp-square text-4xl px-2'></i> </a> </div> 
+                      <button class="md:hidden mr-4 focus:outline-none" id="menu-toggle">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+    </button>
+
+    <!-- Mobile Menu -->
+    <!-- <div class="hidden absolute top-16 left-0 w-full shadow-md bg-white md:hidden" id="mobile-menu">
+        <nav class="flex flex-col items-center gap-4 py-4 text-lg">
+            <a href="#">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#service">Our Services</a>
+            <a href="">Projects</a>
+            <a href="#contact" class="btn">Contact Us</a>
+        </nav>
             </div>
-        </div>
+        </div> -->
     </section>
 
     <p>
-        <i id="dark" class="bx bx-moon bx-md cursor-pointer" onclick="darkMood(
-    
-        )"></i>
+        <i id="dark" class="bx bx-moon bx-md cursor-pointer" onclick="darkMood()"></i>
     </p>
 
 
     <section class="lg:flex gap-30 pt-32" class="hero" id="home" class="hero lg:flex gap-12 pt-28" data-aos="fade-up"
         data-aos-delay="200" data-aos-duration="800">
-        <div class="lg:ps-24 lg:pt-20 sm:ps-8 sm:pe-8 sm:pt-20 mx-2" data-aos="fade-up" data-aos-delay="100">
+        <div class="lg:ps-24 lg:pt-20 sm:ps-8 sm:pe-8 sm:pt-20 mx-6" data-aos="fade-up" data-aos-delay="100">
             <div class="lg:hidden mb-10" data-aos="fade-right" data-aos-duration="1000">
                 <img src="./images/about-us-img.png" alt="" width="800px">
             </div>
@@ -170,10 +176,10 @@
 
     <i id="goTop" class="bx bx-up-arrow-alt bx-md cursor-pointer fixed bottom-6 right-6 hidden z-50"></i>
     <section class="mt-24 lg:ps-24 lg:pe-24" id="service" data-aos="fade-right" data-aos-delay="50">
-        <p class="features  text-xl ">FEATURES</p>
-        <h2 class="text-5xl">WHAT I DO</h2>
+        <p class="features  text-xl mx-6 ">FEATURES</p>
+        <h2 class="text-5xl mx-6 ">WHAT I DO</h2>
         <div class="whatido pt-4">
-            <div class="card gap-6 lg:flex p-6 mx-2" data-aos="fade-down" data-aos-delay="50">
+            <div class="card gap-6 lg:flex p-6 mx-6 lg:mx-0" data-aos="fade-down" data-aos-delay="50">
                 <p class="text-5xl"> <i class='bx bx-laptop'></i></p>
                 <div>
                     <h3>Web Development </h3>
@@ -184,7 +190,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="card gap-6 mx-2 mt-2 lg:flex p-6" data-aos="fade-down" data-aos-delay="100">
+            <div class="card gap-6 mx-6 mt-2 lg:flex p-6 lg:mx-0" data-aos="fade-down" data-aos-delay="100">
                 <p class="text-5xl"><i class='bx bx-code-curly'></i></p>
                 <div>
                     <h3>Software Engineering</h3>
@@ -196,7 +202,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="card gap-6 mx-2 mt-2 lg:flex p-6" data-aos="fade-down" data-aos-delay="150">
+            <div class="card gap-6 mx-6 mt-2 lg:flex p-6 lg:mx-0" data-aos="fade-down" data-aos-delay="150">
                 <p class="text-5xl"><i class='bx bxl-wordpress'></i></p>
                 <div>
                     <h3> Wordpress Development</h3>
@@ -208,7 +214,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="card gap-6 mx-2 mt-2 lg:flex p-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="card gap-6 mx-6 mt-2 lg:flex p-6 lg:mx-0" data-aos="fade-up" data-aos-delay="200">
                 <p class="text-5xl"><i class='bx bx-brain'></i></p>
                 <div>
                     <h3> Artificial Intelligence (AI)</h3>
@@ -219,7 +225,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="card gap-6  mx-2 mt-2 lg:flex p-6" data-aos="fade-up" data-aos-delay="250">
+            <div class="card gap-6  mx-6 mt-2 lg:flex p-6 lg:mx-0" data-aos="fade-up" data-aos-delay="250">
                 <p class="text-5xl"><i class='bx bx-mobile-alt'></i></p>
                 <div>
                     <h3> Cybersecurity </h3>
@@ -230,7 +236,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="card gap-6 mx-2 mt-2 lg:flex p-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="card gap-6 mx-6 mt-2 lg:flex p-6 lg:mx-0" data-aos="fade-up" data-aos-delay="300">
                 <p class="text-5xl"><i class='bx bx-shield-quarter'></i></p>
                 <div>
                     <h3>Graphics Design</h3>
@@ -277,7 +283,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="cool sm:mt-4 md:mt-4" data-aos="zoom-in" data-aos-delay="100">
+                <div class="cool sm:mt-4 md:mt-4 lg:mt-0" data-aos="zoom-in" data-aos-delay="100">
                     <h2 class="text-2xl font-semibold lists">Frontend</h2>
                     <div class="mt-4">
                         <div class="mb-2 flex justify-between">
@@ -327,7 +333,7 @@
                     </div>
                 </div>
 
-                <div class="cool sm:mt-4 md:mt-4" data-aos="zoom-in" data-aos-delay="200">
+                <div class="cool sm:mt-4 md:mt-4 lg:mt-0" data-aos="zoom-in" data-aos-delay="200">
                     <h2 class="text-2xl font-semibold lists">Backend</h2>
                     <div class="mt-4">
 
@@ -379,7 +385,7 @@
                 </div>
 
 
-                <div class="cool sm:mt-4 md:mt-4" data-aos="zoom-in" data-aos-delay="300">
+                <div class="cool sm:mt-4 md:mt-4 lg:mt-0 data-aos=" zoom-in" data-aos-delay="300">
                     <h2 class="text-2xl font-semibold lists">Graphics</h2>
                     <div class="mt-4">
                         <div class="mb-2 flex justify-between">
@@ -440,7 +446,7 @@
         <div class="lg:ps-24 gap-10 lg:pe-24 mt-4 pt-6 " id="cardo">
 
 
-            <div class="card pe-10 lg:flex gap-10 mt-4 sm:mx-2" data-aos="fade-right" data-aos-delay="200">
+            <div class="card pe-10 lg:flex gap-10 mt-4 mx-6" data-aos="fade-right" data-aos-delay="200">
                 <img src="./images/rrr.PNG" alt="" width="500px">
 
                 <div class="mt-4 mx-2">
@@ -464,7 +470,7 @@
                 </div>
             </div>
 
-            <div class="card lg:flex gap-10 mt-4 sm:mx-2" data-aos="fade-left" data-aos-delay="200">
+            <div class="card lg:flex gap-10 mt-4 sm:mx-2 mx-6" data-aos="fade-left" data-aos-delay="200">
                 <img src="./images/Capture.PNG" alt="" width="500px">
                 <!-- <img src="./images/rrr.PNG" alt="" width="500px"> -->
 
@@ -488,7 +494,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card pe-10 lg:flex gap-10 mt-4" data-aos="fade-right" data-aos-delay="200">
+            <div class="card pe-10 lg:flex gap-10 mt-4 mx-6" data-aos="fade-right" data-aos-delay="200">
                 <img src="./images/to do app.PNG" alt="" width="500px">
                 <div class="mx-2">
                     <h2 class="lists text-3xl">To_do web app</h2>
@@ -552,23 +558,15 @@
                 </div>
             </div>
             <!-- Contact Form -->
-            <form action="/contact" method="POST" class="w-full md:w-2/3  px-8 py-8  me-24 cooler"
-                data-aos="flip-down">
+            <form action="/contact" method="POST" class="w-full md:w-2/3  px-8 py-8  me-24 cooler" data-aos="flip-down">
 
                 <div class="flex justify-between gap-6 pt-6">
                     <!-- Name -->
                     <div class="mb-2 w-1/2">
                         <label for="name" class="block text-sm font-medium">Full Name</label>
-                        <input
-  type="text"
-  id="name"
-  name="name"
-  placeholder="Your full name"
-  required
-  class="mt-1 block w-full px-4 py-4 border border-gray-300 rounded-lg 
+                        <input type="text" id="name" name="name" placeholder="Your full name" required class="mt-1 block w-full px-4 py-4 border border-gray-300 rounded-lg 
          bg-transparent
-         focus:outline-none focus:ring-2 focus:ring-orange-400"
-/>
+         focus:outline-none focus:ring-2 focus:ring-orange-400" />
                     </div>
 
                     <!-- Email -->
@@ -762,31 +760,31 @@
     <script>
 
         document.addEventListener("DOMContentLoaded", () => {
-  const menuToggle = document.getElementById("menu-toggle");
-  const mobileMenu = document.getElementById("mobile-menu");
+            const menuToggle = document.getElementById("menu-toggle");
+            const mobileMenu = document.getElementById("mobile-menu");
 
-  if (!menuToggle || !mobileMenu) return;
+            if (!menuToggle || !mobileMenu) return;
 
-  // Toggle menu
-  menuToggle.addEventListener("click", (e) => {
-    e.stopPropagation();
-    mobileMenu.classList.toggle("hidden");
-  });
+            // Toggle menu
+            menuToggle.addEventListener("click", (e) => {
+                e.stopPropagation();
+                mobileMenu.classList.toggle("hidden");
+            });
 
-  // Close when clicking outside
-  document.addEventListener("click", (e) => {
-    if (!mobileMenu.contains(e.target) && !menuToggle.contains(e.target)) {
-      mobileMenu.classList.add("hidden");
-    }
-  });
+            // Close when clicking outside
+            document.addEventListener("click", (e) => {
+                if (!mobileMenu.contains(e.target) && !menuToggle.contains(e.target)) {
+                    mobileMenu.classList.add("hidden");
+                }
+            });
 
-  // Close when clicking a link
-  mobileMenu.querySelectorAll("a").forEach(link => {
-    link.addEventListener("click", () => {
-      mobileMenu.classList.add("hidden");
-    });
-  });
-});
+            // Close when clicking a link
+            mobileMenu.querySelectorAll("a").forEach(link => {
+                link.addEventListener("click", () => {
+                    mobileMenu.classList.add("hidden");
+                });
+            });
+        });
 
 
 

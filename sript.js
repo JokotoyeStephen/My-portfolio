@@ -18,6 +18,7 @@ function darkMood(){
 const toggle=()=>{
   alert("hello world")
 }
+//
 
  document.addEventListener("DOMContentLoaded", () => {
   const menuToggle = document.getElementById("menu-toggle");
