@@ -17,7 +17,7 @@
 
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 
@@ -38,7 +38,7 @@
         <div class="flex justify-between">
             <div class="icon_2 pt-4 flex gap-10 me-24 md:hidden sm:hidden lg:block">
                 <a href="https://github.com/JokotoyeStephen"> <i class='bx bxl-github text-4xl px-2'></i></a>
-                <a href=""> <i class='bx bxl-linkedin-square text-4xl px-2'></i></a> <a href=""><i
+                <a href="https://WWW.linkedin.com/in/jokotoye-stephen-8324a32bb?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"> <i class='bx bxl-linkedin-square text-4xl px-2'></i></a> <a href=""><i
                         class='bx bxl-whatsapp-square text-4xl px-2'></i> </a>
             </div>
             <!-- Hamburger button (visible on mobile: md:hidden) -->
@@ -64,7 +64,7 @@
     </section>
 
     <p>
-        <i id="dark" class="bx bx-moon bx-md cursor-pointer" onclick="darkMood()"></i>
+        <i id="dark" class="bx bx-sun bx-md cursor-pointer" onclick="darkMood()"></i>
     </p>
 
 
@@ -72,7 +72,7 @@
         data-aos-delay="200" data-aos-duration="800">
         <div class="lg:ps-24 lg:pt-20 sm:ps-8 sm:pe-8 sm:pt-20 mx-6" data-aos="fade-up" data-aos-delay="100">
             <div class="lg:hidden mb-10" data-aos="fade-right" data-aos-duration="1000">
-                <img src="./images/about-us-img.png" alt="" width="800px">
+                <img src="./images/imagea.png" alt="" width="800px">
             </div>
             <p class="text-lg font-semibold">WELCOME TO MY WORLD</p>
             <h1 class="text-3xl lg:text-6xl">HI, I'm <SPan style="color: #ff9602;font-weight: 500;">Stephen
@@ -95,7 +95,7 @@
                 <div class="icon_1" data-aos="zoom-in" data-aos-delay="400">
                     <h3 class="mt-10 mb-2">Find Me on</h3>
                     <a href="https://github.com/JokotoyeStephen"> <i class='bx bxl-github'></i></a>
-                    <a href=""> <i class='bx bxl-linkedin-square'></i></a>
+                    <a href="https://WWW.linkedin.com/in/jokotoye-stephen-8324a32bb?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"> <i class='bx bxl-linkedin-square'></i></a>
                     <a href=""><i class='bx bxl-whatsapp-square'></i> </a>
                 </div>
                 <div class="icon_1" data-aos="zoom-in" data-aos-delay="400">
@@ -115,7 +115,7 @@
         data-aos-delay="50">
         <div class="lg:flex gap-12">
             <div>
-                <img src="./images/about-us-img.png" alt="" width="1200px">
+                <img src="./images/imagec.png" alt="" width="1200px">
             </div>
             <div class="about p-6 md:mt-6 sm:mt-6" data-aos="fade-left" data-aos-delay="100">
                 <p class="text-xl novate">About Me</p>
@@ -134,7 +134,7 @@
                         <P style="color: #ff9602;font-family: 'Fredoka', sans-serif;"
                             class="text-center text-3xl font-bold">Contact</P>
                         <div class="flex gap-6">
-                            <a href=""><i class="bx bxl-gmail text-2xl run"></i></a>
+                            <a href="jokotoyestephen2023@gmail.com"><i class="bx bxl-gmail text-2xl run"></i></a>
                             <p class="text-lg">jokotoyestephen2023</p>
                         </div>
                         <div class="flex gap-8">
@@ -258,7 +258,7 @@
     <section class="mt-24 lg:ps-24 lg:pe-24 sm:mx-4 lg:mx-0" data-aos="fade-up" data-aos-delay="100">
         <div class="container mx-auto  sm:mx-4">
             <p class="text-xl lists mx-6 lg:mx-0">MY SKILLS</p>
-            <h2 class="text-3xl lg:text-5xl font-bold mb-5 mx-6 lg:mx-0" style="font-family: fredoka;">e Tech Stack</h2>
+            <h2 class="text-3xl lg:text-4xl font-bold mb-5 mx-6 lg:mx-0" style="font-family: fredoka;">e Tech Stack</h2>
             <div class="lg:grid lg:grid-cols-2 lg:gap-8 " id="skills">
                 <div class="sm:mt-4 md:mt-4">
                     <p style="color: #ff9602;" data-aos="fade-left" class="mx-6 lg:mx-0">My Skills</p>
@@ -562,14 +562,14 @@
                         <p class="text-lg">JokotoyeStephen </p>
                     </div>
                     <div class="flex gap-8">
-                        <a href=""><i class='bx bxl-linkedin-square text-2xl run'></i></a>
+                        <a href="https://WWW.linkedin.com/in/jokotoye-stephen-8324a32bb?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class='bx bxl-linkedin-square text-2xl run'></i></a>
                         <p class="text-lg">Jokotoye Stephen</p>
                     </div>
 
                 </div>
             </div>
             <!-- Contact Form -->
-            <form action="/contact" method="POST" class="w-full md:w-2/3  px-8 py-8  me-24 cooler" data-aos="flip-down">
+            <form action="/contact" method="POST" class="w-full md:w-2/3  px-8 py-8  me-24 cooler" data-aos="flip-down" id="contactForm">
 
                 <div class="flex justify-between gap-6 pt-6">
                     <!-- Name -->
@@ -605,6 +605,7 @@
                             <option value="Full-stack">Full-stack Website</option>
                             <option value="Wordpress">WordPress Development</option>
                             <option value="Landing">Landing Page</option>
+                            <option value="collaboration">collaboration</option>
                             <option value="websites">Website Design</option>
                             <option value="E-commerce">E-commerce Website</option>
                             <option value="Maintenance">Maintenance & Support</option>
@@ -652,7 +653,7 @@
 
                 <!-- Submit Button -->
                 <div class="text-center">
-                    <button type="submit" class="btn1">
+                    <button type="submit" class="btn1" onclick="sendEmail()">
                         Send Message
                     </button>
                 </div>
@@ -674,9 +675,9 @@
                                 <img src="./images/AAA.png" alt="" width="70px" class="ms-6"
                                     style="border-radius: 70px;">
 
-                                <h2 class="text-2xl font-bold">Jokotoye Stephen</h2>
+                                <h2 class="text-1xl lg:text-2xl font-bold">Jokotoye Stephen</h2>
                             </div>
-                            <h2 class="text-5xl font-bold mt-8">Get Ready To Create <br> Great</h2>
+                            <h2 class="text-2xl lg:text-3xl font-bold mt-8">Get Ready To Create <br> Great</h2>
                         </div>
 
 
@@ -812,6 +813,7 @@
                 }
             });
 
+
             // Close when clicking a link
             mobileMenu.querySelectorAll("a").forEach(link => {
                 link.addEventListener("click", () => {
@@ -821,13 +823,71 @@
         });
 
 
+const form = document.getElementById("contactForm");
+
+form.addEventListener("submit", async function(e) {
+  e.preventDefault();
+
+  const formData = new FormData(form);
+  const data = Object.fromEntries(formData.entries());
+
+  // Loading alert
+  Swal.fire({
+    title: "Sending message...",
+    allowOutsideClick: false,
+    didOpen: () => {
+      Swal.showLoading();
+    }
+  });
+
+  try {
+
+    const response = await fetch("/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(data)
+    });
+
+    const result = await response.json();
+
+    if (result.status === "success") {
+
+      Swal.fire({
+        icon: "success",
+        title: "Message Sent!",
+        text: "Your message has been sent successfully.",
+        confirmButtonColor: "#2563eb"
+      });
+
+      form.reset();
+
+    } else {
+
+      Swal.fire({
+        icon: "error",
+        title: "Error",
+        text: "Email could not be sent."
+      });
+
+    }
+
+  } catch (error) {
+
+    Swal.fire({
+      icon: "error",
+      title: "Server Error",
+      text: "Please try again later."
+    });
+  }
+});
 
         AOS.init({
             duration: 800,
             easing: 'ease-in-out',
             once: true,
         });
-
 
 
     </script>
