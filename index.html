@@ -25,8 +25,9 @@
 </head>
 
 <body id="bodys" class="overflow-x-hidden">
-    <section id="navbar" class="flex justify-between items-center shadow fixed w-full navbar pb-2"> <img
-            src="./images/AAA.png" alt="Logo" class="w-16 h-16 rounded-full">
+    <section id="navbar"
+        class="flex justify-between items-center shadow fixed w-full navbar pb-2 top-0 z-50 px-4 sm:px-6 lg:px-8">
+        <img src="./images/AAA.png" alt="Logo" class="w-16 h-16 rounded-full">
         <nav class="hidden md:flex gap-16 text-lg pt-4">
             <p> <a href="#">Home</a></p>
             <p class="hover:text-orange-400 cursor-pointer"><a href="#about">About Us</a></p>
@@ -35,27 +36,30 @@
             <p class="hover:text-orange-400 cursor-pointer"><a href="#contact" class="" id="">Contact Me</a></p>
         </nav>
         <div class="flex justify-between">
-            <div class="icon_2 pt-4 flex gap-10 me-24 md:hidden sm:hidden lg:block"> <a
-                    href="https://github.com/JokotoyeStephen"> <i class='bx bxl-github text-4xl px-2'></i></a> <a
-                    href=""> <i class='bx bxl-linkedin-square text-4xl px-2'></i></a> <a href=""><i
-                        class='bx bxl-whatsapp-square text-4xl px-2'></i> </a> </div> 
-                      <button class="md:hidden mr-4 focus:outline-none" id="menu-toggle">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
-    </button>
-
-    <!-- Mobile Menu -->
-     <div class="hidden absolute top-16 left-0 w-full shadow-md bg-white md:hidden curso" id="mobile-menu">
-        <nav class="flex flex-col items-center gap-4 py-4 text-lg">
-            <a href="#" class="cursor-pointer">Home</a>
-            <a href="#about" class="cursor-pointer">About Us</a>
-            <a href="#service" class="cursor-pointer">Our Services</a>
-            <a href="" class="cursor-pointer">Projects</a>
-            <a href="#contact" class="btn">Contact Us</a>
-        </nav>
+            <div class="icon_2 pt-4 flex gap-10 me-24 md:hidden sm:hidden lg:block">
+                <a href="https://github.com/JokotoyeStephen"> <i class='bx bxl-github text-4xl px-2'></i></a>
+                <a href=""> <i class='bx bxl-linkedin-square text-4xl px-2'></i></a> <a href=""><i
+                        class='bx bxl-whatsapp-square text-4xl px-2'></i> </a>
             </div>
+            <!-- Hamburger button (visible on mobile: md:hidden) -->
+            <button class="md:hidden block focus:outline-none" id="menu-toggle" aria-label="Toggle menu">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="hidden absolute top-16 left-0 w-full white shadow-md md:hidden flex-col items-center py-4 z-40 border-t border-gray-200"
+            id="mobile-menu">
+            <nav class="flex flex-col items-center gap-4 py-2 text-lg w-full">
+                <a href="#" class="hover:text-orange-400 cursor-pointer w-full text-center py-2">Home</a>
+                <a href="#about" class="hover:text-orange-400 cursor-pointer w-full text-center py-2">About Us</a>
+                <a href="#service" class="hover:text-orange-400 cursor-pointer w-full text-center py-2">Our Services</a>
+                <a href="#project" class="hover:text-orange-400 cursor-pointer w-full text-center py-2">Projects</a>
+                <a href="#contact" class="hover:text-orange-400 cursor-pointer w-full text-center py-2">Contact Me</a>
+            </nav>
+
         </div>
     </section>
 
@@ -71,8 +75,8 @@
                 <img src="./images/about-us-img.png" alt="" width="800px">
             </div>
             <p class="text-lg font-semibold">WELCOME TO MY WORLD</p>
-            <h1 class="text-3xl lg:text-6xl">HI, I'm <SPan style="color: #ff9602;font-weight: 500;">Stephen Jokotoye</SPan> a <span
-                    id="typed"> Full stack developer</span></h1>
+            <h1 class="text-3xl lg:text-6xl">HI, I'm <SPan style="color: #ff9602;font-weight: 500;">Stephen
+                    Jokotoye</SPan> a <span id="typed"> Full stack developer</span></h1>
             <p class="lg:text-lg pt-4 text-justify sm:text-sm">I’m a Full-stack web developer focused on building
                 responsive,
                 user-centric and interractive
@@ -102,7 +106,8 @@
                 </div>
             </div>
         </div>
-        <div class="pe-10 sm:hidden hidden lg:block" data-aos="fade-left" data-aos-delay="400"><img src="./images/fan.png" alt="" width="2500px">
+        <div class="pe-10 sm:hidden hidden lg:block" data-aos="fade-left" data-aos-delay="400"><img
+                src="./images/fan.png" alt="" width="2500px">
         </div>
     </section>
 
@@ -257,8 +262,10 @@
             <div class="lg:grid lg:grid-cols-2 lg:gap-8 " id="skills">
                 <div class="sm:mt-4 md:mt-4">
                     <p style="color: #ff9602;" data-aos="fade-left" class="mx-6 lg:mx-0">My Skills</p>
-                    <h2 class="text-2xl lg:text-3xl mt-2 mb-4 mx-6 lg:mx-0">How can I assist with the upcoming project?</h2>
-                    <p class="mb-4 text-justify mx-6 lg:mx-0">Certainly, I can help you create a description for your next project.
+                    <h2 class="text-2xl lg:text-3xl mt-2 mb-4 mx-6 lg:mx-0">How can I assist with the upcoming project?
+                    </h2>
+                    <p class="mb-4 text-justify mx-6 lg:mx-0">Certainly, I can help you create a description for your
+                        next project.
                         However, I'll
                         need more specific information about the project itself. Please provide details such as the
                         project's purpose, goals, scope, and any relevant information, and I'll assist you in crafting a
@@ -282,7 +289,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="cool mt-4 lg:mt-2 data-aos="zoom-in" data-aos-delay="100">
+                <div class="cool mt-4 lg:mt-2 data-aos=" zoom-in" data-aos-delay="100">
                     <h2 class="text-2xl font-semibold lists">Frontend</h2>
                     <div class="mt-4">
                         <div class="mb-2 flex justify-between">
@@ -440,7 +447,8 @@
 
     <section class="mt-24 lg:ps-" data-aos="fade-up" data-aos-delay="100" id="project">
         <p class="text-xl text-center">--- Projects & Work </p>
-        <h2 class="text-3xl lg:text-5xl mt-2 text-center">Individual <span style="color: #ff9602;">Projects</span> <br> &
+        <h2 class="text-3xl lg:text-5xl mt-2 text-center">Individual <span style="color: #ff9602;">Projects</span> <br>
+            &
             collaborations <span style="color: #ff9602;">Projects</span></h2>
         <div class="lg:ps-24 gap-10 lg:pe-24 mt-4 pt-6 " id="cardo">
 
@@ -452,7 +460,8 @@
                     <a href="https://hotel-website-1-eron.onrender.com/index.html">
                         <h2 class="lists text-xl lg:text-3xl">Hotel Management & Booking System</h2>
                     </a>
-                    <p class="pt-6 px-2 text-justify">A Hotel Management & Booking System is a web-based application that allows customers
+                    <p class="pt-6 px-2 text-justify">A Hotel Management & Booking System is a web-based application
+                        that allows customers
                         to
                         search, book, and manage hotel reservations online, while enabling hotel administrators to
                         manage rooms, pricing, and bookings efficiently through a centralized system.</p>
@@ -478,7 +487,8 @@
                     <a href="https://mutil-language-translator.onrender.com">
                         <h2 class="lists text-3xl mt-4">Multi-language Translator</h2>
                     </a>
-                    <p class="pt-6 text-justify"> A language translator project is a software application designed to convert text or
+                    <p class="pt-6 text-justify"> A language translator project is a software application designed to
+                        convert text or
                         speech from one language into another accurately and efficiently. It uses linguistic rules,
                         machine learning, or AI models to understand the source language and generate meaningful
                         translations in the target language, helping users communicate across language barriers.
@@ -526,9 +536,11 @@
         </div>
     </section>
 
-    <section class="lg:ps-24 mt-10 lg:mt-32 pb-12 cooler" data-aos="fade-up" data-aos-duration="200" data-aos-delay="200" id="contact">
+    <section class="lg:ps-24 mt-10 lg:mt-32 pb-12 cooler" data-aos="fade-up" data-aos-duration="200"
+        data-aos-delay="200" id="contact">
         <p class="text-xl pt-8 text-center"> Contact Me</p>
-        <h2 class="text-3xl lg:text-4xl mb-2 text-center">Let talk for <span style="color: #ff9602;">Your next Project</span></h2>
+        <h2 class="text-3xl lg:text-4xl mb-2 text-center">Let talk for <span style="color: #ff9602;">Your next
+                Project</span></h2>
         <p class="text-xl text-center">Have a project in mind or just want to say hi?</p>
 
         <div class="flex flex-col md:flex-row gap-8 pt-12" data-aos="flip-up">
