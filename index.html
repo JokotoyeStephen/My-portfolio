@@ -29,10 +29,10 @@
             src="./images/AAA.png" alt="Logo" class="w-16 h-16 rounded-full">
         <nav class="hidden md:flex gap-16 text-lg pt-4">
             <p> <a href="#">Home</a></p>
-            <p class="hover:text-orange-400"><a href="#about">About Us</a></p>
-            <p class="hover:text-orange-400"><a href="#service">Our Services</a></p>
-            <p class="hover:text-orange-400"> <a href="">Projects</a></p>
-            <p class="hover:text-orange-400"><a href="#contact" class="" id="">Contact Me</a></p>
+            <p class="hover:text-orange-400 cursor-pointer"><a href="#about">About Us</a></p>
+            <p class="hover:text-orange-400 cursor-pointer"><a href="#service">Our Services</a></p>
+            <p class="hover:text-orange-400 cursor-pointer"> <a href="#project">Projects</a></p>
+            <p class="hover:text-orange-400 cursor-pointer"><a href="#contact" class="" id="">Contact Me</a></p>
         </nav>
         <div class="flex justify-between">
             <div class="icon_2 pt-4 flex gap-10 me-24 md:hidden sm:hidden lg:block"> <a
@@ -47,16 +47,16 @@
     </button>
 
     <!-- Mobile Menu -->
-    <!-- <div class="hidden absolute top-16 left-0 w-full shadow-md bg-white md:hidden" id="mobile-menu">
+     <div class="hidden absolute top-16 left-0 w-full shadow-md bg-white md:hidden curso" id="mobile-menu">
         <nav class="flex flex-col items-center gap-4 py-4 text-lg">
-            <a href="#">Home</a>
-            <a href="#about">About Us</a>
-            <a href="#service">Our Services</a>
-            <a href="">Projects</a>
+            <a href="#" class="cursor-pointer">Home</a>
+            <a href="#about" class="cursor-pointer">About Us</a>
+            <a href="#service" class="cursor-pointer">Our Services</a>
+            <a href="" class="cursor-pointer">Projects</a>
             <a href="#contact" class="btn">Contact Us</a>
         </nav>
             </div>
-        </div> -->
+        </div>
     </section>
 
     <p>
@@ -71,7 +71,7 @@
                 <img src="./images/about-us-img.png" alt="" width="800px">
             </div>
             <p class="text-lg font-semibold">WELCOME TO MY WORLD</p>
-            <h1 class="text-6xl">HI, I'm <SPan style="color: #ff9602;font-weight: 500;">Stephen Jokotoye</SPan> a <span
+            <h1 class="text-3xl lg:text-6xl">HI, I'm <SPan style="color: #ff9602;font-weight: 500;">Stephen Jokotoye</SPan> a <span
                     id="typed"> Full stack developer</span></h1>
             <p class="lg:text-lg pt-4 text-justify sm:text-sm">I’m a Full-stack web developer focused on building
                 responsive,
@@ -102,8 +102,7 @@
                 </div>
             </div>
         </div>
-        <div class="pe-10 sm:hidden hidden lg:block" data-aos="fade-left" data-aos-delay="400"><img
-                src="./images/ef13771bd3956c84ed21a57c10cf05ee-removebg-preview (2).png" alt="" width="2000px">
+        <div class="pe-10 sm:hidden hidden lg:block" data-aos="fade-left" data-aos-delay="400"><img src="./images/fan.png" alt="" width="2500px">
         </div>
     </section>
 
@@ -113,7 +112,7 @@
             <div>
                 <img src="./images/about-us-img.png" alt="" width="1200px">
             </div>
-            <div class="about p-12 md:mt-6 sm:mt-6" data-aos="fade-left" data-aos-delay="100">
+            <div class="about p-6 md:mt-6 sm:mt-6" data-aos="fade-left" data-aos-delay="100">
                 <p class="text-xl novate">About Me</p>
                 <h2 class="text-5xl mt-2">Who is <span
                         style="color: #ff9602;font-family: 'Fredoka', sans-serif; font-weight: 600;">Jokotoye
@@ -177,7 +176,7 @@
     <i id="goTop" class="bx bx-up-arrow-alt bx-md cursor-pointer fixed bottom-6 right-6 hidden z-50"></i>
     <section class="mt-24 lg:ps-24 lg:pe-24" id="service" data-aos="fade-right" data-aos-delay="50">
         <p class="features  text-xl mx-6 ">FEATURES</p>
-        <h2 class="text-5xl mx-6 ">WHAT I DO</h2>
+        <h2 class="text-3xl lg:text-5xl mx-6 ">WHAT I DO</h2>
         <div class="whatido pt-4">
             <div class="card gap-6 lg:flex p-6 mx-6 lg:mx-0" data-aos="fade-down" data-aos-delay="50">
                 <p class="text-5xl"> <i class='bx bx-laptop'></i></p>
@@ -251,15 +250,15 @@
     </section>
 
 
-    <section class="mt-24 mx-2 lg:ps-24 lg:pe-24" data-aos="fade-up" data-aos-delay="100">
-        <div class="container mx-auto">
-            <p class="text-xl lists">MY SKILLS</p>
-            <h2 class="text-5xl font-bold mb-5" style="font-family: fredoka;">e Tech Stack</h2>
-            <div class="lg:grid lg:grid-cols-2 lg:gap-8" id="skills">
+    <section class="mt-24 lg:ps-24 lg:pe-24 sm:mx-4 lg:mx-0" data-aos="fade-up" data-aos-delay="100">
+        <div class="container mx-auto  sm:mx-4">
+            <p class="text-xl lists mx-6 lg:mx-0">MY SKILLS</p>
+            <h2 class="text-3xl lg:text-5xl font-bold mb-5 mx-6 lg:mx-0" style="font-family: fredoka;">e Tech Stack</h2>
+            <div class="lg:grid lg:grid-cols-2 lg:gap-8 " id="skills">
                 <div class="sm:mt-4 md:mt-4">
-                    <p style="color: #ff9602;" data-aos="fade-left">My Skills</p>
-                    <h2 class="text-3xl mt-2 mb-4">How can I assist with the upcoming project?</h2>
-                    <p class="mb-4 text-justify">Certainly, I can help you create a description for your next project.
+                    <p style="color: #ff9602;" data-aos="fade-left" class="mx-6 lg:mx-0">My Skills</p>
+                    <h2 class="text-2xl lg:text-3xl mt-2 mb-4 mx-6 lg:mx-0">How can I assist with the upcoming project?</h2>
+                    <p class="mb-4 text-justify mx-6 lg:mx-0">Certainly, I can help you create a description for your next project.
                         However, I'll
                         need more specific information about the project itself. Please provide details such as the
                         project's purpose, goals, scope, and any relevant information, and I'll assist you in crafting a
@@ -283,7 +282,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="cool sm:mt-4 md:mt-4 lg:mt-0" data-aos="zoom-in" data-aos-delay="100">
+                <div class="cool mt-4 lg:mt-2 data-aos="zoom-in" data-aos-delay="100">
                     <h2 class="text-2xl font-semibold lists">Frontend</h2>
                     <div class="mt-4">
                         <div class="mb-2 flex justify-between">
@@ -333,7 +332,7 @@
                     </div>
                 </div>
 
-                <div class="cool sm:mt-4 md:mt-4 lg:mt-0" data-aos="zoom-in" data-aos-delay="200">
+                <div class="cool mt-4 lg:mt-0" data-aos="zoom-in" data-aos-delay="200">
                     <h2 class="text-2xl font-semibold lists">Backend</h2>
                     <div class="mt-4">
 
@@ -385,7 +384,7 @@
                 </div>
 
 
-                <div class="cool sm:mt-4 md:mt-4 lg:mt-0 data-aos=" zoom-in" data-aos-delay="300">
+                <div class="cool mt-4 lg:mt-0 data-aos=" zoom-in" data-aos-delay="300">
                     <h2 class="text-2xl font-semibold lists">Graphics</h2>
                     <div class="mt-4">
                         <div class="mb-2 flex justify-between">
@@ -439,26 +438,26 @@
 
 
 
-    <section class="mt-24 lg:ps-" data-aos="fade-up" data-aos-delay="100">
+    <section class="mt-24 lg:ps-" data-aos="fade-up" data-aos-delay="100" id="project">
         <p class="text-xl text-center">--- Projects & Work </p>
-        <h2 class="text-5xl mt-2 text-center">Individual <span style="color: #ff9602;">Projects</span> <br> &
+        <h2 class="text-3xl lg:text-5xl mt-2 text-center">Individual <span style="color: #ff9602;">Projects</span> <br> &
             collaborations <span style="color: #ff9602;">Projects</span></h2>
         <div class="lg:ps-24 gap-10 lg:pe-24 mt-4 pt-6 " id="cardo">
 
 
-            <div class="card pe-10 lg:flex gap-10 mt-4 mx-6" data-aos="fade-right" data-aos-delay="200">
+            <div class="card lg:flex gap-10 mt-4 sm:mx-2 mx-6" data-aos="fade-right" data-aos-delay="200">
                 <img src="./images/rrr.PNG" alt="" width="500px">
 
                 <div class="mt-4 mx-2">
                     <a href="https://hotel-website-1-eron.onrender.com/index.html">
-                        <h2 class="lists  text-3xl">Hotel Management & Booking System</h2>
+                        <h2 class="lists text-xl lg:text-3xl">Hotel Management & Booking System</h2>
                     </a>
-                    <p class="pt-6">A Hotel Management & Booking System is a web-based application that allows customers
+                    <p class="pt-6 px-2 text-justify">A Hotel Management & Booking System is a web-based application that allows customers
                         to
                         search, book, and manage hotel reservations online, while enabling hotel administrators to
                         manage rooms, pricing, and bookings efficiently through a centralized system.</p>
 
-                    <div class="lg:flex gap-8 pt-6">
+                    <div class="lg:flex gap-8 pt-6 text-center">
                         <p>HTML5</p>
                         <p>Tailwind CSS</p>
                         <p>JavaScript (ES6+)</p>
@@ -477,14 +476,14 @@
                 <div class="mx-2">
 
                     <a href="https://mutil-language-translator.onrender.com">
-                        <h2 class="lists text-4xl mt-4">Multi-language Translator</h2>
+                        <h2 class="lists text-3xl mt-4">Multi-language Translator</h2>
                     </a>
-                    <p class="pt-6"> A language translator project is a software application designed to convert text or
+                    <p class="pt-6 text-justify"> A language translator project is a software application designed to convert text or
                         speech from one language into another accurately and efficiently. It uses linguistic rules,
                         machine learning, or AI models to understand the source language and generate meaningful
                         translations in the target language, helping users communicate across language barriers.
                     </p>
-                    <div class="lg:flex gap-8 pt-6">
+                    <div class="lg:flex gap-8 pt-6 text-center">
                         <p>HTML5</p>
                         <p>Tailwind CSS</p>
                         <p>JavaScript (ES6+)</p>
@@ -494,17 +493,17 @@
                     </div>
                 </div>
             </div>
-            <div class="card pe-10 lg:flex gap-10 mt-4 mx-6" data-aos="fade-right" data-aos-delay="200">
+            <div class="card lg:flex gap-10 mt-4 sm:mx-2 mx-6" data-aos="fade-right" data-aos-delay="200">
                 <img src="./images/to do app.PNG" alt="" width="500px">
                 <div class="mx-2">
-                    <h2 class="lists text-3xl">To_do web app</h2>
+                    <h2 class="lists text-xl lg:text-3xl">To_do web app</h2>
 
                     <p class="pt-6 text-justify">A simple and efficient to-do list app designed to help users organize
                         tasks, set
                         priorities, and track daily activities. It allows users to add, edit, and delete tasks, mark
                         tasks as completed, and stay focused on what matters most. The clean interface ensures ease of
                         use while helping users boost productivity and manage time effectively.</p>
-                    <div class="flex gap-8 pt-6">
+                    <div class="flex gap-8 pt-6 text-center">
                         <p>React</p>
                         <p>Bootstrap CSS</p>
                         <p>JavaScript (ES6+)</p>
@@ -527,9 +526,9 @@
         </div>
     </section>
 
-    <section class="lg:ps-24 mt-32 pb-12 cooler" data-aos="fade-up" data-aos-duration="200" data-aos-delay="200">
+    <section class="lg:ps-24 mt-10 lg:mt-32 pb-12 cooler" data-aos="fade-up" data-aos-duration="200" data-aos-delay="200" id="contact">
         <p class="text-xl pt-8 text-center"> Contact Me</p>
-        <h2 class="text-4xl mb-2 text-center">Let talk for <span style="color: #ff9602;">Your next Project</span></h2>
+        <h2 class="text-3xl lg:text-4xl mb-2 text-center">Let talk for <span style="color: #ff9602;">Your next Project</span></h2>
         <p class="text-xl text-center">Have a project in mind or just want to say hi?</p>
 
         <div class="flex flex-col md:flex-row gap-8 pt-12" data-aos="flip-up">
@@ -758,6 +757,29 @@
 
     <!-- <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script> -->
     <script>
+        const skillsSection = document.getElementById('skills');
+
+        function fillBars() {
+            const bars = document.querySelectorAll('.skill-bar');
+            bars.forEach(bar => {
+                const skillLevel = bar.getAttribute('data-skill');
+                bar.style.width = skillLevel + '%';
+            });
+        }
+
+        // Detect when the user scrolls to the skills section 
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    fillBars();
+                    observer.disconnect(); // Stop observing after filling
+                }
+            });
+        });
+
+        observer.observe(skillsSection);
+
+
 
         document.addEventListener("DOMContentLoaded", () => {
             const menuToggle = document.getElementById("menu-toggle");
@@ -793,28 +815,6 @@
             easing: 'ease-in-out',
             once: true,
         });
-
-        const skillsSection = document.getElementById('skills');
-
-        function fillBars() {
-            const bars = document.querySelectorAll('.skill-bar');
-            bars.forEach(bar => {
-                const skillLevel = bar.getAttribute('data-skill');
-                bar.style.width = skillLevel + '%';
-            });
-        }
-
-        // Detect when the user scrolls to the skills section 
-        const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    fillBars();
-                    observer.disconnect(); // Stop observing after filling
-                }
-            });
-        });
-
-        observer.observe(skillsSection);
 
 
 

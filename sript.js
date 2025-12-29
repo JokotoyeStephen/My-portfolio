@@ -15,37 +15,50 @@ function darkMood(){
     icon.classList.remove("bx-sun");
     icon.classList.add("bx-moon");
 }}
-const toggle=()=>{
-  alert("hello world")
-}
+
+
+    // const menuToggle = document.getElementById('menu-toggle');
+    // const mobileMenu = document.getElementById('mobile-menu');
+
+    // menuToggle.addEventListener('click', () => {
+    //     mobileMenu.classList.toggle('hidden');
+    // });
+
+    // // Optional: Close menu when clicking a link
+    // const mobileLinks = mobileMenu.querySelectorAll('a');
+    // mobileLinks.forEach(link => {
+    //     link.addEventListener('click', () => {
+    //         mobileMenu.classList.add('hidden');
+    //     });
+    // });
 //
 
- document.addEventListener("DOMContentLoaded", () => {
-  const menuToggle = document.getElementById("menu-toggle");
-  const mobileMenu = document.getElementById("mobile-menu");
+//  document.addEventListener("DOMContentLoaded", () => {
+//   const menuToggle = document.getElementById("menu-toggle");
+//   const mobileMenu = document.getElementById("mobile-menu");
 
-  if (!menuToggle || !mobileMenu) return;
+//   if (!menuToggle || !mobileMenu) return;
 
-  // Toggle menu
-  menuToggle.addEventListener("click", (e) => {
-    e.stopPropagation();
-    mobileMenu.classList.toggle("hidden");
-  });
+//   // Toggle menu
+//   menuToggle.addEventListener("click", (e) => {
+//     e.stopPropagation();
+//     mobileMenu.classList.toggle("hidden");
+//   });
 
-  // Close when clicking outside
-  document.addEventListener("click", (e) => {
-    if (!mobileMenu.contains(e.target) && !menuToggle.contains(e.target)) {
-      mobileMenu.classList.add("hidden");
-    }
-  });
+//   // Close when clicking outside
+//   document.addEventListener("click", (e) => {
+//     if (!mobileMenu.contains(e.target) && !menuToggle.contains(e.target)) {
+//       mobileMenu.classList.add("hidden");
+//     }
+//   });
 
-  // Close when clicking a link
-  mobileMenu.querySelectorAll("a").forEach(link => {
-    link.addEventListener("click", () => {
-      mobileMenu.classList.add("hidden");
-    });
-  });
-});
+//   // Close when clicking a link
+//   mobileMenu.querySelectorAll("a").forEach(link => {
+//     link.addEventListener("click", () => {
+//       mobileMenu.classList.add("hidden");
+//     });
+//   });
+// });
   
 const goTop = document.getElementById("goTop");
 
